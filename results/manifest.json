@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "source_manifest_sha256": "9cb85f361767e03e2c3580d26d3699cfe6f6068f3ca82f13e17c3522f7e4b561",
+  "files": [
+    {
+      "path": "alignment.fasta",
+      "sha256": "94d0a56d568e718ded62e4a103ccde9959dd36d5d32b1cad64b00dd369f67412",
+      "bytes": 1262
+    },
+    {
+      "path": "analysis.json",
+      "sha256": "b7fbf9abf96f18718ff9499afef957fa7abf2084ca066c0e510146f79885cef4",
+      "bytes": 146891
+    },
+    {
+      "path": "chemical_summary.csv",
+      "sha256": "a001f3a87cf2288eb7182e2f1504cbabf27c519094c6e8d42a61608a6f7c95a4",
+      "bytes": 175
+    },
+    {
+      "path": "figures/reaction_paths.svg",
+      "sha256": "49ea1929b1cc993596a1808823551df92c605a4238f670950223a251c3fd4888",
+      "bytes": 1812
+    },
+    {
+      "path": "figures/sequence_identity.svg",
+      "sha256": "c778fbde8e2bd8054041b3bde0fb8b7a2fc7ce4430d8fa66fe8850e7763bbc1f",
+      "bytes": 35045
+    },
+    {
+      "path": "molecules/gpp.svg",
+      "sha256": "06093015dc28e0ba5c995df5b539f14dde8082e6e5493ed54e81b8694d28b1da",
+      "bytes": 33153
+    },
+    {
+      "path": "molecules/limonene.svg",
+      "sha256": "889585b1b133585f50fef09a128cb261447ea348824267db52d24ff678765b95",
+      "bytes": 26135
+    },
+    {
+      "path": "molecules/linalool.svg",
+      "sha256": "37e8a92fedd1f03a839a639692b51a692e42efd98f1b9dea06e7ee19693cc183",
+      "bytes": 26051
+    },
+    {
+      "path": "report.md",
+      "sha256": "ce4b4c141b2c9c2e2752a1b0e3f68acb85cf2792e3f7ca5d774a716d3ae9598d",
+      "bytes": 4395
+    },
+    {
+      "path": "residue_alignment.csv",
+      "sha256": "39c987c2f64da7cb4fdedde2c05d755a75e36c3369da906fbfa5d1659f42c2d0",
+      "bytes": 9348
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "source_manifest": "data/enzyme-sources.json",
+  "scope": "Two experimentally characterized plant enzymes with different reported major products from GPP; a descriptive case study, not a classifier or causal sequence-to-product model.",
+  "comparison_limits": [
+    "The pair comes from different species and differs in sequence length and targeting annotations. A full-sequence alignment describes similarity but does not isolate product-determining residues.",
+    "Each evidence statement retains its source and scope. Reviewed database status is separate from experimental support for an individual field.",
+    "The project includes an experimental structure only for the orange enzyme. It cannot compare both experimental pockets.",
+    "Reaction strings copied from UniProt use database protonation conventions; the chemical module separately documents its neutral compound representations."
+  ],
+  "enzymes": [
+    {
+      "id": "limonene_synthase",
+      "name": "(R)-limonene synthase 1, chloroplastic",
+      "organism": "Citrus sinensis",
+      "common_name": "Sweet orange",
+      "taxonomy_id": 2711,
+      "accession": "A0A1C9J6A7",
+      "reviewed": true,
+      "uniprot_entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "uniprot_entry_audit": {
+        "firstPublicDate": "2017-06-07",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2017-05-10",
+        "entryVersion": 34,
+        "sequenceVersion": 2
+      },
+      "sequence": "MSSCINPSTLATSVNGFKCLPLATNRAAIRIMAKNKPVQCLVSTKYDNLTVDRRSANYQPSIWDHDFLQSLNSNYTDETYKRRAEELKGKVKTAIKDVTEPLDQLELIDNLQRLGLAYHFEPEIRNILRNIHNHNKDYNWRKENLYATSLEFRLLRQHGYPVSQEVFSGFKDDKVGFICDDFKGILSLHEASYYSLEGESIMEEAWQFTSKHLKEMMITSNSKEEDVFVAEQAKRALELPLHWKAPMLEARWFIHVYEKREDKNHLLLELAKLEFNTLQAIYQEELKDISGWWKDTGLGEKLSFARNRLVASFLWSMGIAFEPQFAYCRRVLTISIALITVIDDIYDVYGTLDELEIFTDAVARWDINYALKHLPGYMKMCFLALYNFVNEFAYYVLKQQDFDMLLSIKHAWLGLIQAYLVEAKWYHSKYTPKLEEYLENGLVSITGPLIITISYLSGTNPIIKKELEFLESNPDIVHWSSKIFRLQDDLGTSSDEIQRGDVPKSIQCYMHETGASEEVAREHIKDMMRQMWKKVNAYTADKDSPLTRTTAEFLLNLVRMSHFMYLHGDGHGVQNQETIDVGFTLLFQPIPLEDKDMAFTASPGTKG",
+      "sequence_length": 607,
+      "sequence_sha256": "413a42515ff79ffd49fdd7388ad2430fc2af8017d0eb842ea8ba89cdc0659e76",
+      "sequence_numbering": "One-based, inclusive positions in the full canonical UniProt sequence, including any annotated targeting sequence.",
+      "product_id": "limonene",
+      "source_files": {
+        "uniprot_json": "data/sources/uniprot_A0A1C9J6A7.json",
+        "fasta": "data/sources/uniprot_A0A1C9J6A7.fasta"
+      },
+      "annotated_motifs": [
+        {
+          "name": "DDXXD motif",
+          "start": 343,
+          "end": 347,
+          "sequence": "DDIYD",
+          "evidence": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "interpretation": "UniProt annotation in canonical residue numbering; this conserved motif alone does not predict product identity."
+        }
+      ],
+      "display_name": "Orange (R)-limonene synthase",
+      "selected_reaction": {
+        "substrate_id": "gpp",
+        "product_id": "limonene",
+        "product_name": "(4R)-(+)-limonene",
+        "ec": "4.2.3.20",
+        "rhea": "RHEA:10940",
+        "equation_from_uniprot": "(2E)-geranyl diphosphate = (4R)-limonene + diphosphate",
+        "evidence_code": "ECO:0000269",
+        "pmid": "28272875"
+      },
+      "product_specificity": {
+        "scope": "Reported products in the GPP assay of Morehouse et al. (2017), not a universal product-yield prediction.",
+        "major_product": "(4R)-(+)-limonene",
+        "reported_product_percentages": [
+          {
+            "product": "limonene",
+            "percent": 99.0
+          },
+          {
+            "product": "myrcene",
+            "percent": 0.7
+          },
+          {
+            "product": "alpha-pinene",
+            "percent": 0.3
+          }
+        ],
+        "enantiomer_note": "The limonene product was exclusively the (+) enantiomer; this does not mean limonene was the only reaction product. Alpha-pinene stereochemistry is not assigned here.",
+        "class_fraction_note": "The cyclic-product class totals 99.3% when alpha-pinene is included; that is distinct from the reported 99% limonene fraction.",
+        "substrate_scope_note": "This project selects the GPP reaction. UniProt also annotates activity with neryl diphosphate from PMID28272876; the selected enzyme is not claimed to accept only GPP.",
+        "pmid": "28272875"
+      },
+      "evidence": [
+        {
+          "label": "Morehouse et al. (2017): product assay and experimental structure",
+          "url": "https://doi.org/10.1021/acs.biochem.7b00143",
+          "text": "Recombinant Citrus sinensis enzyme produces predominantly (+)-limonene from GPP, with minor myrcene and alpha-pinene. The paper reports an open apo structure at 2.3 Å."
+        },
+        {
+          "label": "UniProt A0A1C9J6A7: reviewed sequence and field-specific annotations",
+          "url": "https://www.uniprot.org/uniprotkb/A0A1C9J6A7/entry",
+          "text": "The pinned reviewed entry supplies the 607-residue canonical precursor sequence. Review status does not make every annotation experimentally measured."
+        },
+        {
+          "label": "RCSB PDB 5UV0: experimental coordinates",
+          "url": "https://www.rcsb.org/structure/5UV0",
+          "text": "Chain A is a single experimental apo model with 522 modeled residues; it contains no modeled substrate, product or metal."
+        }
+      ],
+      "publications": [
+        {
+          "pmid": "28272875",
+          "doi": "10.1021/acs.biochem.7b00143",
+          "pmcid": "PMC5642283",
+          "title": "Functional and Structural Characterization of a (+)-Limonene Synthase from Citrus sinensis.",
+          "year": 2017,
+          "access_used": "PubMed abstract and PMC full text."
+        }
+      ],
+      "experimental_structure": {
+        "status": "available",
+        "pdb_id": "5UV0",
+        "method": "X-RAY DIFFRACTION",
+        "resolution_angstrom": 2.3,
+        "state": "open apo",
+        "entity_id": "1",
+        "label_asym_id": "A",
+        "auth_asym_id": "A",
+        "model": 1,
+        "source_files": {
+          "mmcif": "data/sources/5uv0.cif",
+          "entry": "data/sources/rcsb_5UV0_entry.json",
+          "entity": "data/sources/rcsb_5UV0_entity_1.json",
+          "chain": "data/sources/rcsb_5UV0_chain_A.json"
+        },
+        "deposited_polymer_sequence_length": 607,
+        "modeled_residue_count": 522,
+        "deposited_unmodeled_residue_count": 85,
+        "unobserved_ranges_in_canonical_numbering": [
+          [
+            1,
+            59
+          ],
+          [
+            219,
+            225
+          ],
+          [
+            574,
+            577
+          ],
+          [
+            593,
+            607
+          ]
+        ],
+        "observed_ranges_in_canonical_numbering": [
+          [
+            60,
+            218
+          ],
+          [
+            226,
+            573
+          ],
+          [
+            578,
+            592
+          ]
+        ],
+        "sequence_mapping": {
+          "provenance": "RCSB SIFTS alignment and explicit comparison of the pinned entity and UniProt sequences.",
+          "entity_start": 1,
+          "canonical_start": 1,
+          "length": 607,
+          "entity_sequence_matches_pinned_canonical": true,
+          "author_and_label_numbering_match": true
+        },
+        "construct": {
+          "canonical_length": 607,
+          "removed_n_terminal_residues": [
+            1,
+            52
+          ],
+          "reported_tag": "N-terminal His6 tag replaces the plastid targeting segment.",
+          "reported_purified_construct_length_including_tag": 562,
+          "source_pmid": "28272875",
+          "note": "The deposited polymer reference sequence is 607 residues, whereas the experimental construct was truncated and tagged. The 85 unmodeled reference positions include the removed targeting segment; they are not all experimental disorder."
+        },
+        "historical_sequence_conflict": {
+          "canonical_position": 245,
+          "deposited_residue": "ALA",
+          "historical_database_residue": "VAL",
+          "pinned_current_uniprot_residue": "ALA",
+          "source": "_struct_ref_seq_dif in the pinned mmCIF retains an ALA/VAL conflict; RCSB reports one conflict and zero mutations.",
+          "interpretation": "The current pinned UniProt sequence (version 2) and PDB entity sequence agree at this position. Preserve the historical annotation without treating it as a current sequence mismatch or engineered mutation."
+        },
+        "modeled_nonwater_ligand_count": 0,
+        "modeled_metal_count": 0,
+        "interpretation_limits": [
+          "This open apo model does not show a substrate pose or a catalytic intermediate.",
+          "The paper notes unassigned active-site density; no substrate or product is assigned to it here.",
+          "One available enzyme structure cannot support a two-enzyme pocket comparison or structural RMSD."
+        ]
+      },
+      "annotation_limits": [
+        "The transit-peptide boundary and DDXXD motif carry curator-inference evidence ECO:0000305 in UniProt.",
+        "Metal-binding annotations from other cited experiments are not evidence for modeled metals in the selected apo 5UV0 structure."
+      ]
+    },
+    {
+      "id": "linalool_synthase",
+      "name": "R-linalool synthase",
+      "organism": "Lavandula angustifolia",
+      "common_name": "Lavender",
+      "taxonomy_id": 39329,
+      "accession": "Q2XSC5",
+      "reviewed": true,
+      "uniprot_entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "uniprot_entry_audit": {
+        "firstPublicDate": "2012-09-05",
+        "lastAnnotationUpdateDate": "2025-02-05",
+        "lastSequenceUpdateDate": "2005-12-20",
+        "entryVersion": 63,
+        "sequenceVersion": 1
+      },
+      "sequence": "MSININMPAAAVLRPFRCSQLHVDETRRSGNYRPSAWDSNYIQSLNSQYKEKKCLTRLEGLIEQVKELKGTKMEAVQQLELIDDSQNLGLSYYFQDKIKHILNLIYNDHKYFYDSEAEGMDLYFTALGFRLFRQHGFKVSQEVFDRFKNENGTYFKHDDTKGLLQLYEASFLVREGEETLEQAREFATKSLQRKLDEDGDGIDANIESWIRHSLEIPLHWRAQRLEARWFLDAYARRPDMNPVIFELAKLNFNIVQATQQEELKALSRWWSSLGLAEKLPFVRDRLVESYFWAIPLFEPHQYGYQRKVATKIITLITSLDDVYDIYGTLDELQLFTNLFERWDNASIGRLPEYLQLFYFAIHNFVSEVAYDILKEKGFTSIVYLQRSWVDLLKGYLKEAKWYNSGYTPSLEEYFDNAFMTIGAPPVLSQAYFTLGSSMEKPIIESMYEYDNILRVSGMLVRLPDDLGTSSFEMERGDVPKSVQLYMKETNATEEEAVEHVRFLNREAWKKMNTAEAAGDSPLVSDVVAVAANLGRAAQFMYFDGDGNQSSLQQWIVSMLFEPYA",
+      "sequence_length": 564,
+      "sequence_sha256": "114a7f6e45eab01369938417d336df1fc31059f7d269f538d690c0e0caba3f7a",
+      "sequence_numbering": "One-based, inclusive positions in the full canonical UniProt sequence, including any annotated targeting sequence.",
+      "product_id": "linalool",
+      "source_files": {
+        "uniprot_json": "data/sources/uniprot_Q2XSC5.json",
+        "fasta": "data/sources/uniprot_Q2XSC5.fasta"
+      },
+      "annotated_motifs": [
+        {
+          "name": "DDXXD motif",
+          "start": 320,
+          "end": 324,
+          "sequence": "DDVYD",
+          "evidence": [],
+          "interpretation": "UniProt annotation in canonical residue numbering; this conserved motif alone does not predict product identity."
+        }
+      ],
+      "display_name": "Lavender (R)-linalool synthase",
+      "selected_reaction": {
+        "substrate_id": "gpp",
+        "product_id": "linalool",
+        "product_name": "(3R)-(−)-linalool",
+        "ec": "4.2.3.26",
+        "rhea": "RHEA:15809",
+        "equation_from_uniprot": "(2E)-geranyl diphosphate + H2O = (R)-linalool + diphosphate",
+        "evidence_code": "ECO:0000269",
+        "pmid": "17662687"
+      },
+      "product_specificity": {
+        "scope": "LaLINS product identity reported by Landmann et al. (2007); abstract and reviewed UniProt annotations were inspected.",
+        "major_product": "(3R)-(−)-linalool",
+        "reported_specificity": "The paper abstract reports exclusively (R)-(−)-linalool from LaLINS.",
+        "interpretation": "This is the authors' reported product specificity under their assay conditions, not a universal purity or yield guarantee. No quantitative product table is reconstructed from the abstract.",
+        "identity_note": "LaLINS is the selected linalool synthase. The same paper also describes a different enzyme, LaLIMS, with a mixed limonene product profile.",
+        "pmid": "17662687"
+      },
+      "evidence": [
+        {
+          "label": "Landmann et al. (2007): experimentally characterized LaLINS",
+          "url": "https://doi.org/10.1016/j.abb.2007.06.011",
+          "text": "The paper abstract reports that recombinant lavender LaLINS produces exclusively (R)-(−)-linalool. This project inspected the abstract and UniProt annotation, not the full experimental product table."
+        },
+        {
+          "label": "UniProt Q2XSC5: reviewed sequence and experimental function annotation",
+          "url": "https://www.uniprot.org/uniprotkb/Q2XSC5/entry",
+          "text": "The pinned 564-residue sequence is reviewed; function and catalytic activity cite experimental evidence from PMID17662687. Some other annotations are by similarity."
+        },
+        {
+          "label": "Experimental structure coverage in the pinned record",
+          "url": "https://www.uniprot.org/uniprotkb/Q2XSC5/entry",
+          "text": "No PDB cross-reference appears in the pinned Q2XSC5 entry. No experimental coordinates or predicted protein model are included for this enzyme."
+        }
+      ],
+      "publications": [
+        {
+          "pmid": "17662687",
+          "doi": "10.1016/j.abb.2007.06.011",
+          "title": "Cloning and functional characterization of three terpene synthases from lavender (Lavandula angustifolia).",
+          "year": 2007,
+          "access_used": "PubMed abstract and reviewed UniProt experimental annotations; primary full text was not inspected."
+        }
+      ],
+      "experimental_structure": {
+        "status": "not_included",
+        "pdb_id": null,
+        "availability_evidence": "No PDB cross-reference in the pinned reviewed Q2XSC5 record.",
+        "availability_scope": "This is a bounded finding from the selected source snapshot, not proof that no experimental structure exists anywhere.",
+        "interpretation_limits": [
+          "No lavender enzyme pocket, catalytic pose, metal geometry or structural comparison is inferred.",
+          "No predicted protein structure is substituted for missing experimental coordinates."
+        ]
+      },
+      "annotation_limits": [
+        "UniProt Mg2+/Mn2+ cofactor and metal-binding annotations use ECO:0000250 (by similarity); they are not direct observations for this selected enzyme.",
+        "The DDXXD motif is annotated in UniProt without an explicit evidence item on the motif feature.",
+        "No transit-peptide boundary is imposed on this sequence."
+      ]
+    }
+  ]
+}

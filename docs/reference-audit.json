@@ -1,0 +1,378 @@
+{
+  "review_date": "2026-10-27",
+  "scope": "Metadata, selected experimental claims, database evidence codes, and reuse terms supporting the citrus/lavender comparison.",
+  "limits": "Focused narrative audit; no comprehensive literature review, independent experiment, full ML reproduction, or reprocessing of raw structural/assay data.",
+  "references": [
+    {
+      "id": "o-raghallaigh-2026",
+      "access_level": "full_text",
+      "supported_claims": [
+        "The study classifies monoterpene synthases using AlphaFold2-derived, manually selected Fpocket active-site features.",
+        "The curated class labels derive from published GC-MS profiles, with at least 70% of products in the linear or cyclic class.",
+        "The paper reports 88 curated sequences, a modelling dataset of 87 observations, and explicit performance-related exclusions."
+      ],
+      "limitations": [
+        "This project does not reproduce the paper's model training or reported accuracy.",
+        "The paper's methods exclude A0A8H4VHP2 and O22340 because inclusion reduced model performance; this selection history limits interpretation of performance.",
+        "The paper contains model-dependent and exploratory interpretations, not universal causal rules for cyclisation.",
+        "Full body retrieved; relevant methods, results, interpretation and data availability inspected. Supplementary experiments and every cited source were not independently re-audited."
+      ],
+      "corrections": [
+        "Use the published title, not the different title wording in the repository's README citation."
+      ],
+      "rights": "Article CC BY 3.0; software/data repository has separate MIT notice.",
+      "source_type": "primary_research_article",
+      "title": "Pockets to products: a data-driven approach for classification of monoterpene synthases.",
+      "authors": [
+        "Cathal Ó Raghallaigh",
+        "Nigel S Scrutton",
+        "Sam Hay"
+      ],
+      "year": 2026,
+      "journal": "Digital discovery",
+      "volume": "5",
+      "issue": "10",
+      "pages": "4573-4589",
+      "doi": "10.1039/d6dd00312e",
+      "pmid": "42799051",
+      "pmcid": "PMC13613485",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42799051/",
+      "doi_url": "https://doi.org/10.1039/d6dd00312e",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "morehouse-2017",
+      "access_level": "full_text",
+      "supported_claims": [
+        "Selected Citrus sinensis enzyme converts GPP primarily to (+)-limonene under the reported assay.",
+        "GC-MS reports 99% limonene, 0.7% beta-myrcene and 0.3% alpha-pinene; enantiomer assignment is supported by circular dichroism comparison.",
+        "The crystal represents an apo/open conformation at 2.3 angstrom resolution; the experimental expression construct removes residues 1–52 and adds an affinity tag."
+      ],
+      "limitations": [
+        "Full body retrieved and relevant construct, product, structure and interpretation sections inspected; original raw chromatograms and diffraction data were not reprocessed.",
+        "Reported catalytic constants depend on assay conditions and cofactors, so they are not a matched comparison with lavender.",
+        "The primary publication does not establish that every sequence annotation in the current database record was directly measured."
+      ],
+      "corrections": [
+        "The ATC cyclic-class fraction 99.3% includes 0.3% alpha-pinene and must not be presented as the limonene fraction.",
+        "Do not equate the full 607-residue sequence with the experimentally expressed construct or coordinate coverage."
+      ],
+      "rights": "PMC permits text-mining retrieval; no general open reuse license returned. Cite/link; do not redistribute the article.",
+      "source_type": "primary_research_article",
+      "title": "Functional and Structural Characterization of a (+)-Limonene Synthase from Citrus sinensis.",
+      "authors": [
+        "Benjamin R Morehouse",
+        "Ramasamy P Kumar",
+        "Jason O Matos",
+        "Sarah Naomi Olsen",
+        "Sonya Entova",
+        "Daniel D Oprian"
+      ],
+      "year": 2017,
+      "journal": "Biochemistry",
+      "volume": "56",
+      "issue": "12",
+      "pages": "1706-1715",
+      "doi": "10.1021/acs.biochem.7b00143",
+      "pmid": "28272875",
+      "pmcid": "PMC5642283",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28272875/",
+      "doi_url": "https://doi.org/10.1021/acs.biochem.7b00143",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "landmann-2007",
+      "access_level": "abstract",
+      "supported_claims": [
+        "The primary abstract reports that lavender LaLINS produces exclusively (R)-(−)-linalool in its characterization.",
+        "LaLIMS is a separate, multiproduct enzyme in the same paper and must not be confused with LaLINS."
+      ],
+      "limitations": [
+        "Only PubMed metadata and abstract were inspected; primary full text and detailed assay conditions were not read.",
+        "Detailed lavender assay context in ATC is secondary curation, not an independently verified transcription here.",
+        "Exclusive product formation is a report for the studied assay, not a claim about every substrate or condition."
+      ],
+      "corrections": [],
+      "rights": "No PMCID or explicit open reuse license returned; cite/link to the publication.",
+      "source_type": "primary_research_article",
+      "title": "Cloning and functional characterization of three terpene synthases from lavender (Lavandula angustifolia).",
+      "authors": [
+        "Christian Landmann",
+        "Barbara Fink",
+        "Maria Festner",
+        "Márta Dregus",
+        "Karl-Heinz Engel",
+        "Wilfried Schwab"
+      ],
+      "year": 2007,
+      "journal": "Archives of biochemistry and biophysics",
+      "volume": "465",
+      "issue": "2",
+      "pages": "417-29",
+      "doi": "10.1016/j.abb.2007.06.011",
+      "pmid": "17662687",
+      "pmcid": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17662687/",
+      "doi_url": "https://doi.org/10.1016/j.abb.2007.06.011",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "hyatt-2007",
+      "access_level": "abstract",
+      "supported_claims": [
+        "A primary experimental structure was reported for Mentha spicata (4S)-limonene synthase with fluorinated substrate/intermediate analogues.",
+        "This provides a historical structural reference for the family, distinct from the selected Citrus sinensis enzyme."
+      ],
+      "limitations": [
+        "Only abstract and metadata inspected; automated full-text requests failed, and the rights response did not permit full-text retrieval.",
+        "The existence of a related limonene structure does not supply experimental coordinates for the selected lavender enzyme."
+      ],
+      "corrections": [],
+      "rights": "Copyright National Academy of Sciences; no permissive license returned.",
+      "source_type": "primary_research_article",
+      "title": "Structure of limonene synthase, a simple model for terpenoid cyclase catalysis.",
+      "authors": [
+        "David C Hyatt",
+        "Buhyun Youn",
+        "Yuxin Zhao",
+        "Bindu Santhamma",
+        "Robert M Coates",
+        "Rodney B Croteau",
+        "ChulHee Kang"
+      ],
+      "year": 2007,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "volume": "104",
+      "issue": "13",
+      "pages": "5360-5",
+      "doi": "10.1073/pnas.0700915104",
+      "pmid": "17372193",
+      "pmcid": "PMC1838495",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17372193/",
+      "doi_url": "https://doi.org/10.1073/pnas.0700915104",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "srividya-2015",
+      "access_level": "abstract",
+      "supported_claims": [
+        "Alanine-scanning and enzyme-fidelity experiments in spearmint limonene synthase identified effects of W324/H579 mutations on activity and product profile.",
+        "These experiments support treating specificity as dependent on residue context rather than one universal motif."
+      ],
+      "limitations": [
+        "Only abstract and metadata inspected; full-text retrieval failed and the rights response did not permit automated full text.",
+        "Mutations in spearmint cannot be assumed to have the same effect at apparently corresponding positions in citrus or lavender."
+      ],
+      "corrections": [],
+      "rights": "No permissive license returned; cite/link.",
+      "source_type": "primary_research_article",
+      "title": "Functional analysis of (4S)-limonene synthase mutants reveals determinants of catalytic outcome in a model monoterpene synthase.",
+      "authors": [
+        "Narayanan Srividya",
+        "Edward M Davis",
+        "Rodney B Croteau",
+        "B Markus Lange"
+      ],
+      "year": 2015,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "volume": "112",
+      "issue": "11",
+      "pages": "3332-7",
+      "doi": "10.1073/pnas.1501203112",
+      "pmid": "25733883",
+      "pmcid": "PMC4371936",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25733883/",
+      "doi_url": "https://doi.org/10.1073/pnas.1501203112",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "karuppiah-2017",
+      "access_level": "full_text",
+      "supported_claims": [
+        "Bacterial bLinS from Streptomyces clavuligerus makes R-linalool from GPP and trans-nerolidol from FPP in the reported assays.",
+        "The authors identify the FGPP pose in one bLinS monomer as noncatalytic and discuss incomplete metal binding and crystal packing.",
+        "Bacterial and plant monoterpene synthases differ in domain architecture; the bacterial example is not the selected lavender enzyme."
+      ],
+      "limitations": [
+        "Full body retrieved in two pages; relevant product, structural interpretation and conclusion sections inspected.",
+        "This is background evidence, not the primary evidence for Q2XSC5 or an experimental structure of lavender LaLINS.",
+        "No production-titer or mechanistic claim is extrapolated to the selected enzymes."
+      ],
+      "corrections": [],
+      "rights": "CC BY statement in PMC; retain author/source attribution.",
+      "source_type": "primary_research_article",
+      "title": "Structural Basis of Catalysis in the Bacterial Monoterpene Synthases Linalool Synthase and 1,8-Cineole Synthase.",
+      "authors": [
+        "Vijaykumar Karuppiah",
+        "Kara E Ranaghan",
+        "Nicole G H Leferink",
+        "Linus O Johannissen",
+        "Muralidharan Shanmugam",
+        "Aisling Ní Cheallaigh",
+        "Nathan J Bennett",
+        "Lewis J Kearsey",
+        "Eriko Takano",
+        "John M Gardiner",
+        "Marc W van der Kamp",
+        "Sam Hay",
+        "Adrian J Mulholland",
+        "David Leys",
+        "Nigel S Scrutton"
+      ],
+      "year": 2017,
+      "journal": "ACS catalysis",
+      "volume": "7",
+      "issue": "9",
+      "pages": "6268-6282",
+      "doi": "10.1021/acscatal.7b01924",
+      "pmid": "28966840",
+      "pmcid": "PMC5617326",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28966840/",
+      "doi_url": "https://doi.org/10.1021/acscatal.7b01924",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "crowell-2002",
+      "access_level": "abstract",
+      "supported_claims": [
+        "Mentha citrata linalool synthase was cloned and characterized as a distinct R-linalool synthase.",
+        "The paper illustrates species-specific enzyme characterization; it is not a study of lavender LaLINS."
+      ],
+      "limitations": [
+        "Only abstract and metadata inspected; no PMCID returned.",
+        "Homology-model discussion is not experimental structure evidence for the selected lavender enzyme."
+      ],
+      "corrections": [],
+      "rights": "No explicit open reuse license returned; cite/link.",
+      "source_type": "primary_research_article",
+      "title": "Molecular cloning and characterization of a new linalool synthase.",
+      "authors": [
+        "Anastasia L Crowell",
+        "David C Williams",
+        "Edward M Davis",
+        "Mark R Wildung",
+        "Rodney Croteau"
+      ],
+      "year": 2002,
+      "journal": "Archives of biochemistry and biophysics",
+      "volume": "405",
+      "issue": "1",
+      "pages": "112-21",
+      "doi": "10.1016/s0003-9861(02)00348-x",
+      "pmid": "12176064",
+      "pmcid": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12176064/",
+      "doi_url": "https://doi.org/10.1016/s0003-9861(02)00348-x",
+      "checked_on": "2026-10-27",
+      "metadata_status": "verified"
+    },
+    {
+      "id": "atc-dataset",
+      "source_type": "software_and_dataset",
+      "title": "ATC / Pockets to Products repository",
+      "authors": [
+        "Cathal Ó Raghallaigh",
+        "Nigel S. Scrutton",
+        "Sam Hay"
+      ],
+      "year": 2026,
+      "url": "https://github.com/cathaloraghallaigh/ATC/tree/3216a2cdc89a97a9cc28c65011c628717159f7e4",
+      "version": "3216a2cdc89a97a9cc28c65011c628717159f7e4",
+      "checked_on": "2026-10-27",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "CharacterisedSeqRef.csv has 88 enzyme records with class fractions, sequences, assay contexts and primary citations.",
+        "FullDataset.csv has 87 rows: 59 linear and 28 cyclic, with derived active-site features.",
+        "Both selected accessions occur in the reference and feature tables.",
+        "The repository README and LICENSE identify MIT terms, copyright 2025 Cathal Ó Raghallaigh."
+      ],
+      "limitations": [
+        "The repository is a versioned secondary curation and derived-feature source, not a new assay performed here.",
+        "A cyclic or linear class fraction is not necessarily the named product fraction.",
+        "Its README uses different paper-title wording; cite the verified published title.",
+        "The article's CC BY license and the repository MIT notice apply to different materials; upstream database rights remain separate."
+      ],
+      "corrections": [
+        "Preserve cyclic 99.3% versus limonene 99% for the citrus example."
+      ],
+      "rights": "MIT notice inspected; preserve copyright and license with copied material."
+    },
+    {
+      "id": "uniprot-citrus",
+      "source_type": "protein_database_record",
+      "title": "UniProtKB A0A1C9J6A7",
+      "authors": "UniProt Consortium",
+      "year": 2026,
+      "url": "https://www.uniprot.org/uniprotkb/A0A1C9J6A7/entry",
+      "version": "entry34 / sequence2",
+      "checked_on": "2026-10-27",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Pinned reviewed protein record contains a 607-residue sequence and field-specific evidence annotations."
+      ],
+      "limitations": [
+        "Sequence annotation and experimental construct are different records.",
+        "Chloroplast location is a sequence-based annotation (ECO:0000255); reviewed status does not make every field an experimental observation."
+      ],
+      "corrections": [],
+      "rights": "CC BY 4.0; see source manifest and https://www.uniprot.org/help/license"
+    },
+    {
+      "id": "uniprot-lavender",
+      "source_type": "protein_database_record",
+      "title": "UniProtKB Q2XSC5",
+      "authors": "UniProt Consortium",
+      "year": 2026,
+      "url": "https://www.uniprot.org/uniprotkb/Q2XSC5/entry",
+      "version": "entry63 / sequence1",
+      "checked_on": "2026-10-27",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Pinned reviewed protein record contains a 564-residue sequence and field-specific evidence annotations."
+      ],
+      "limitations": [
+        "Function and catalytic-reaction annotations cite experimental evidence (ECO:0000269) from Landmann2007.",
+        "Cofactor and three-metal-ion statements use evidence by similarity (ECO:0000250), not direct experimental evidence in this annotation.",
+        "A reviewed sequence record is not an experimental structure."
+      ],
+      "corrections": [],
+      "rights": "CC BY 4.0; see source manifest and https://www.uniprot.org/help/license"
+    },
+    {
+      "id": "pdb-5uv0",
+      "source_type": "experimental_structure_database_record",
+      "title": "PDB 5UV0: Citrus sinensis (+)-limonene synthase",
+      "authors": [
+        "Morehouse et al.",
+        "wwPDB / RCSB PDB"
+      ],
+      "year": 2017,
+      "url": "https://www.rcsb.org/structure/5UV0",
+      "checked_on": "2026-10-27",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "RCSB metadata links 5UV0 to Morehouse2017 and reports an X-ray structure at 2.3 angstrom resolution.",
+        "Entry metadata records 522 modeled polymer residues and 607 deposited polymer positions; no nonpolymer entity is deposited.",
+        "The archived A245/V245 conflict annotation is not a difference between the pinned current UniProt and deposited polymer sequences: both have A245 and all 607 positions match."
+      ],
+      "limitations": [
+        "The sequence record, expressed construct, deposited polymer sequence and modeled coordinates must be distinguished.",
+        "An apo structure does not show bound native substrate, product, or the reaction in motion.",
+        "This record supplies experimental structure evidence for citrus, not for the selected lavender enzyme.",
+        "The archival sequence-discrepancy annotation refers to an earlier reference; no engineered mutation is recorded."
+      ],
+      "corrections": [],
+      "rights": "wwPDB archive data CC0; retain primary citation and any separately attributed annotations."
+    }
+  ]
+}

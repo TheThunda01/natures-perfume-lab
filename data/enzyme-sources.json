@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "scope": "Pinned enzyme sequence, annotation, and experimental structure sources",
+  "sources": [
+    {
+      "path": "data/sources/uniprot_A0A1C9J6A7.json",
+      "url": "https://rest.uniprot.org/uniprotkb/A0A1C9J6A7.json",
+      "retrieved_utc": "2026-10-27T12:41:45.407865+00:00",
+      "bytes": 24509,
+      "sha256": "5a33cef91454152c474c765ded92e91acdc705b6b267831ea464d57e651ac016",
+      "provider": "UniProt",
+      "license": "CC BY 4.0",
+      "license_url": "https://www.uniprot.org/help/license",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/uniprot_A0A1C9J6A7.fasta",
+      "url": "https://rest.uniprot.org/uniprotkb/A0A1C9J6A7.fasta",
+      "retrieved_utc": "2026-10-27T12:41:45.687607+00:00",
+      "bytes": 720,
+      "sha256": "e628058456cbb19d198435b6f67fd39f4646b29bbdd2d67c0c678aa05e4c278c",
+      "provider": "UniProt",
+      "license": "CC BY 4.0",
+      "license_url": "https://www.uniprot.org/help/license",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/uniprot_Q2XSC5.json",
+      "url": "https://rest.uniprot.org/uniprotkb/Q2XSC5.json",
+      "retrieved_utc": "2026-10-27T12:41:46.110172+00:00",
+      "bytes": 11389,
+      "sha256": "94723b467b7600af3b705f1b66d6c11b6703c9f4f0c4dee192eda00a235103bb",
+      "provider": "UniProt",
+      "license": "CC BY 4.0",
+      "license_url": "https://www.uniprot.org/help/license",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/uniprot_Q2XSC5.fasta",
+      "url": "https://rest.uniprot.org/uniprotkb/Q2XSC5.fasta",
+      "retrieved_utc": "2026-10-27T12:41:47.074671+00:00",
+      "bytes": 662,
+      "sha256": "e156c5b152750449150b00fe36d609dabcabeab9cd1eda3ca801dcef5bf7e617",
+      "provider": "UniProt",
+      "license": "CC BY 4.0",
+      "license_url": "https://www.uniprot.org/help/license",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/rcsb_5UV0_entry.json",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/5UV0",
+      "retrieved_utc": "2026-10-27T12:41:47.617711+00:00",
+      "bytes": 10750,
+      "sha256": "176fa05b44d1eef77fd90a17ba85702c17e65a124c980711c83e3d2b60f19600",
+      "provider": "RCSB PDB",
+      "license": "CC0 1.0; retain attribution for third-party annotations",
+      "license_url": "https://www.rcsb.org/pages/policies",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/rcsb_5UV0_entity_1.json",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/5UV0/1",
+      "retrieved_utc": "2026-10-27T12:41:47.752784+00:00",
+      "bytes": 31672,
+      "sha256": "d4b43294d015d064add4b3512d8f3df89e51c12b2d523e6432a4831bf6fe362e",
+      "provider": "RCSB PDB",
+      "license": "CC0 1.0; retain attribution for third-party annotations",
+      "license_url": "https://www.rcsb.org/pages/policies",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/rcsb_5UV0_chain_A.json",
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity_instance/5UV0/A",
+      "retrieved_utc": "2026-10-27T12:41:47.967737+00:00",
+      "bytes": 48431,
+      "sha256": "79fdbbc782f19b68e9d3ea574ee7ef4c57ec9b095e086292387cb588007a6889",
+      "provider": "RCSB PDB",
+      "license": "CC0 1.0; retain attribution for third-party annotations",
+      "license_url": "https://www.rcsb.org/pages/policies",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    },
+    {
+      "path": "data/sources/5uv0.cif",
+      "url": "https://files.rcsb.org/download/5UV0.cif",
+      "retrieved_utc": "2026-10-27T12:41:48.436151+00:00",
+      "bytes": 505888,
+      "sha256": "419459462350695b119b75fb7864243b40b3290cb317573bad3378218ffb77ec",
+      "provider": "wwPDB via RCSB",
+      "license": "CC0 1.0",
+      "license_url": "https://www.wwpdb.org/about/usage-policies",
+      "serialization": "Unmodified HTTP response body; no JSON reformatting or line-ending conversion."
+    }
+  ]
+}

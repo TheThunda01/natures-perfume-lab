@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "provider": "NCBI PubChem PUG REST",
+  "policy_checked_utc": "2026-10-27",
+  "sources": [
+    {
+      "id": "gpp",
+      "path": "data/sources/geranyl-diphosphate.pubchem.json",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/geranyl%20diphosphate/property/MolecularFormula,IsomericSMILES,InChI,InChIKey/JSON",
+      "record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/445995",
+      "cid": 445995,
+      "retrieved_utc": "2026-10-27",
+      "sha256": "d93e773215c282366a8847dc84826277ebb9d7169c1772e576ae8dfaac463bed",
+      "bytes": 385,
+      "fields": [
+        "CID",
+        "MolecularFormula",
+        "SMILES",
+        "InChI",
+        "InChIKey"
+      ],
+      "license": {
+        "identifier": null,
+        "policy_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/#data",
+        "statement": "NCBI places no restrictions on use or distribution of molecular data, but notes that submitters may assert rights. The property response provides no record-specific license. These snapshots contain chemical identifiers and computed properties, not contributed descriptive text. PubChem/NLM attribution is retained."
+      }
+    },
+    {
+      "id": "limonene",
+      "path": "data/sources/r-limonene.pubchem.json",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/%28R%29-limonene/property/MolecularFormula,IsomericSMILES,InChI,InChIKey/JSON",
+      "record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/440917",
+      "cid": 440917,
+      "retrieved_utc": "2026-10-27",
+      "sha256": "040d5eb0f780a10bde7c92ae9e328281760ee5112864670bccdd6d5746097dc4",
+      "bytes": 320,
+      "fields": [
+        "CID",
+        "MolecularFormula",
+        "SMILES",
+        "InChI",
+        "InChIKey"
+      ],
+      "license": {
+        "identifier": null,
+        "policy_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/#data",
+        "statement": "NCBI places no restrictions on use or distribution of molecular data, but notes that submitters may assert rights. The property response provides no record-specific license. These snapshots contain chemical identifiers and computed properties, not contributed descriptive text. PubChem/NLM attribution is retained."
+      }
+    },
+    {
+      "id": "linalool",
+      "path": "data/sources/r-linalool.pubchem.json",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/%28R%29-linalool/property/MolecularFormula,IsomericSMILES,InChI,InChIKey/JSON",
+      "record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/443158",
+      "cid": 443158,
+      "retrieved_utc": "2026-10-27",
+      "sha256": "3b2b984d0031dcab9bc0ec02f6ea50bf68ea8d275e6072f54cb9e87faa286af7",
+      "bytes": 323,
+      "fields": [
+        "CID",
+        "MolecularFormula",
+        "SMILES",
+        "InChI",
+        "InChIKey"
+      ],
+      "license": {
+        "identifier": null,
+        "policy_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/#data",
+        "statement": "NCBI places no restrictions on use or distribution of molecular data, but notes that submitters may assert rights. The property response provides no record-specific license. These snapshots contain chemical identifiers and computed properties, not contributed descriptive text. PubChem/NLM attribution is retained."
+      }
+    },
+    {
+      "id": "diphosphoric_acid",
+      "path": "data/sources/diphosphoric-acid.pubchem.json",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/diphosphoric%20acid/property/MolecularFormula,IsomericSMILES,InChI,InChIKey/JSON",
+      "record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1023",
+      "cid": 1023,
+      "retrieved_utc": "2026-10-27",
+      "sha256": "ae495fd53df2013e9c48ff8868bc4c7da15ebbe01227a2f2d384f3a8202f1fd1",
+      "bytes": 298,
+      "fields": [
+        "CID",
+        "MolecularFormula",
+        "SMILES",
+        "InChI",
+        "InChIKey"
+      ],
+      "license": {
+        "identifier": null,
+        "policy_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/#data",
+        "statement": "NCBI places no restrictions on use or distribution of molecular data, but notes that submitters may assert rights. The property response provides no record-specific license. These snapshots contain chemical identifiers and computed properties, not contributed descriptive text. PubChem/NLM attribution is retained."
+      }
+    },
+    {
+      "id": "water",
+      "path": "data/sources/water.pubchem.json",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/962/property/MolecularFormula,IsomericSMILES,InChI,InChIKey/JSON",
+      "record_url": "https://pubchem.ncbi.nlm.nih.gov/compound/962",
+      "cid": 962,
+      "retrieved_utc": "2026-10-27",
+      "sha256": "d2deb0b08f6ac01e69253bab58be9f3c079c1eca25a68ff54e4c9a8920928e76",
+      "bytes": 237,
+      "fields": [
+        "CID",
+        "MolecularFormula",
+        "SMILES",
+        "InChI",
+        "InChIKey"
+      ],
+      "license": {
+        "identifier": null,
+        "policy_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/#data",
+        "statement": "NCBI places no restrictions on use or distribution of molecular data, but notes that submitters may assert rights. The property response provides no record-specific license. These snapshots contain chemical identifiers and computed properties, not contributed descriptive text. PubChem/NLM attribution is retained."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Assumptions and their consequences
+
+The project makes a small set of chemical and computational choices. A successful software check establishes only the property it tests; some conditions require source appraisal or experimental evidence.
+
+| Assumption or choice | Rationale | Check | Consequence if it fails |
+| --- | --- | --- | --- |
+| The selected source snapshots identify the intended compounds and enzymes. | Every comparison needs stable identities. | Recorded identifiers, provenance, and file fingerprints. | Correct calculations can describe the wrong biological case. |
+| The chosen chemical representations have the intended connectivity, charge, and stereochemistry. | These properties define the graph being compared. | RDKit parsing and explicit record checks; source interpretation remains necessary. | A different representation can change calculated properties or the meaning of the atom map. |
+| The curated atom correspondence is suitable for illustrating this case. | The correspondence makes endpoint bookkeeping visible. | Declared map checks and comparison with cited sources. | Passing graph checks cannot rescue a chemically unjustified mapping. |
+| Selected sequence strings are comparable under the declared alignment settings. | Pairwise alignment provides an inspectable correspondence. | Sequence provenance, scoring settings, and reported gap/identity denominators. | A technically valid alignment may still be unsuitable for a functional inference. |
+| PDB 5UV0 chain A labels can be checked against the citrus reference sequence. | The deposited entity and experimental construct are not interchangeable. | Modeled Cα identities are compared with the corresponding reference positions; the construct caveat is reported separately. | A reference-length count would misdescribe the expressed or crystallized construct. |
+| A carbon-map label denotes declared lineage, not conventional product numbering. | One labeling system lets readers follow both branches. | Unique carbon labels and net bond comparisons. | A product position could be misidentified; C8/C10 graph symmetry also prevents a unique isotope-fate conclusion. |
+| Neutral source structures are suitable for an explicit formula-balance example. | Protonation conventions must be fixed before checking a net equation. | Element and formal-charge balance for the neutral equations. | The calculation must not be interpreted as physiological proton stoichiometry. |
+| Fixed-seed small-molecule coordinates are suitable for display. | The explorer needs a consistent geometric illustration. | RDKit conformer generation with recorded settings. | Display geometry must not be treated as an experimental conformation, enzyme-bound pose, or energetic prediction. |
+| A limited set of cases is adequate for teaching this workflow. | A small scope allows each evidence step to be inspected. | Explicit case boundaries; no representativeness test is claimed. | Results must not be generalized to an entire enzyme family or organism. |
+| The supplied records can support chemical and structural questions without sensory labels. | The project concerns molecular evidence. | No odor-prediction model or sensory dataset is used. | Treating these outputs as smell predictions would exceed the available evidence. |
+| Fingerprints refer to exact bytes. | This distinguishes source and artifact revisions. | Hash recomputation and verifier checks. | Encoding or line-ending changes can trigger a mismatch without changing scientific meaning. |
+| The supported software environment reproduces the declared calculations. | Parsers and numerical routines can change between versions. | Pinned dependencies, recorded runtime, and automated tests. | Other environments may require a fresh comparison rather than a claim of equivalent results. |
+
+The global alignment uses both full canonical sequences and a fixed scoring rule, with the first optimal alignment returned by the pinned library. It is not a mature-domain alignment or a causal comparison of product specificity. The citrus sequence includes a documented targeting segment; no processing boundary is imposed on lavender. The 43.39% identity calculation uses 560 paired-residue columns; the separate all-column result includes 51 gap columns.
+
+No experimental structure is included for the selected lavender enzyme. The absence is a limit of this case and its pinned source record, not a claim that no structure exists anywhere. The citrus check compares current sequence and coordinates while retaining the historical position-245 conflict annotation separately.
+
+The [methods](methods.md) record the implementation, and the [reference audit](reference-audit.json) records source-access limits. Neither a checklist nor a hash establishes biological validity.

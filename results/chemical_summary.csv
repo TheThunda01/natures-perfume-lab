@@ -1,0 +1,4 @@
+molecule_id,name,formula,carbon_count,ring_count
+gpp,(2E)-Geranyl diphosphate,C10H20O7P2,10,0
+limonene,(4R)-(+)-Limonene,C10H16,10,1
+linalool,(3R)-(−)-Linalool,C10H18O,10,0

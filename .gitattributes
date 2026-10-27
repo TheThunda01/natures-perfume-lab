@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+data/** -text
+data/sources/** -whitespace linguist-vendored
+*.svg -whitespace
+results/** linguist-generated
+web/data.js linguist-generated

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6ef" />
+    <meta
+      name="description"
+      content="Explore how characterized terpene enzymes turn a shared precursor into limonene or linalool. Structures, sequence comparisons, and source evidence in one offline explorer."
+    />
+    <title>Nature’s Perfume Lab · A terpene explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="data.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#explorer">Skip to molecule explorer</a>
+    <header class="site-header wrap">
+      <a class="brand" href="#top" aria-label="Nature’s Perfume Lab, home"
+        ><span class="brand-mark" aria-hidden="true">✳</span
+        ><span>Nature’s<br />Perfume Lab</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#explorer">Molecules</a><a href="#routes">Reactions</a
+        ><a href="#proteins">Proteins</a><a href="#evidence">Evidence</a>
+      </nav>
+      <span class="header-note"
+        ><span aria-hidden="true">●</span> An open learning lab</span
+      >
+    </header>
+    <main id="top">
+      <section class="hero wrap" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">CHEMISTRY · BIOLOGY · A LITTLE CURIOSITY</p>
+          <h1 id="page-title">
+            One starting molecule.<br /><span>Two different paths.</span>
+          </h1>
+          <p class="hero-copy">
+            Explore how characterized enzymes turn a shared ten-carbon precursor
+            into limonene or linalool. Start with a structure, follow a
+            reaction, then inspect the evidence.
+          </p>
+          <a class="text-link" href="#explorer"
+            >Step inside the lab
+            <span class="arrow down" aria-hidden="true"></span
+          ></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-number">C₁₀</span
+          ><span class="eyebrow">A SHARED CARBON FRAMEWORK</span>
+          <p>
+            Small molecular differences.<br />Different chemical possibilities.
+          </p>
+          <div class="hero-tags">
+            <span class="tag green">Limonene · ring</span
+            ><span class="tag violet">Linalool · alcohol</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="explorer"
+        class="wrap section"
+        aria-labelledby="explorer-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / LOOK CLOSER</p>
+            <h2 id="explorer-title">Meet the molecules.</h2>
+          </div>
+          <p>
+            Choose a structure. Select its carbon atoms. <br />See what changes
+            along each route.
+          </p>
+        </div>
+        <div id="data-error" class="notice" role="alert" hidden>
+          The molecule data could not be loaded. Keep data.js beside this page,
+          then reload.
+        </div>
+        <div class="explorer-layout">
+          <div
+            class="molecule-list"
+            id="molecule-list"
+            role="group"
+            aria-label="Choose a molecule"
+          ></div>
+          <div class="viewer-card">
+            <div class="viewer-top">
+              <div>
+                <p id="molecule-role" class="eyebrow">STRUCTURE</p>
+                <h3 id="molecule-name">Loading molecular data…</h3>
+              </div>
+              <div class="view-toggle" role="group" aria-label="Structure view">
+                <button id="view-2d" type="button" aria-pressed="true">
+                  2D structure</button
+                ><button id="view-3d" type="button" aria-pressed="false">
+                  3D model
+                </button>
+              </div>
+            </div>
+            <div
+              id="structure-2d"
+              class="structure-stage"
+              aria-label="Molecular structure"
+            ></div>
+            <div
+              id="structure-3d"
+              class="structure-stage three-dimensional"
+              hidden
+            >
+              <canvas
+                id="molecule-canvas"
+                aria-label="Rotatable ball-and-stick model; use the rotation controls below"
+              ></canvas>
+              <p class="canvas-hint">
+                Drag to rotate · or use the controls below
+              </p>
+            </div>
+            <div id="rotation-controls" class="rotation-controls" hidden>
+              <label
+                >Turn
+                <input
+                  id="rotation-y"
+                  type="range"
+                  min="-180"
+                  max="180"
+                  value="-25" /></label
+              ><label
+                >Tilt
+                <input
+                  id="rotation-x"
+                  type="range"
+                  min="-180"
+                  max="180"
+                  value="18" /></label
+              ><button id="reset-view" class="small-button" type="button">
+                Reset view
+              </button>
+            </div>
+            <p id="model-note" class="model-note" hidden>
+              A generated conformer shows one possible geometry, not an
+              experimental structure or a bound pose. Carbon is green, oxygen red,
+              and phosphorus gold. Hydrogen atoms are not shown.
+            </p>
+            <div class="viewer-bottom">
+              <div id="molecule-facts" class="molecule-facts"></div>
+              <p id="atom-status" class="atom-status" aria-live="polite">
+                Choose a carbon atom to highlight it.
+              </p>
+            </div>
+            <p id="representation-note" class="fine-print"></p>
+            <div class="carbon-controls">
+              <div class="carbon-title">
+                <span class="eyebrow">CARBON ATOMS</span
+                ><button id="clear-atom" class="quiet-button" type="button">
+                  Clear selection
+                </button>
+              </div>
+              <div
+                id="atom-buttons"
+                class="atom-buttons"
+                role="group"
+                aria-label="Select a carbon atom"
+              ></div>
+              <p id="atom-label-note" class="fine-print">
+                Atom labels refer to the selected structure.
+              </p>
+              <details id="mapping-details" class="mapping-details" hidden>
+                <summary>About the carbon labels</summary>
+                <div id="mapping-description" class="fine-print"></div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <p class="section-footnote">
+          Structure describes chemistry. It does not, by itself, predict odor,
+          odor intensity, enzyme function, or product yield.
+        </p>
+      </section>
+
+      <section id="routes" class="wrap section" aria-labelledby="routes-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / FOLLOW THE CHEMISTRY</p>
+            <h2 id="routes-title">A fork in the pathway.</h2>
+          </div>
+          <p>
+            Two documented enzyme activities. <br />A simplified guide to their
+            chemistry.
+          </p>
+        </div>
+        <div class="route-origin">
+          <span class="origin-dot" aria-hidden="true"></span>
+          <div>
+            <strong>Geranyl diphosphate</strong
+            ><span>GPP · the shared precursor</span>
+          </div>
+          <span class="route-line" aria-hidden="true"></span
+          ><span class="fine-print">Explore either route below</span>
+        </div>
+        <div id="reaction-cards" class="reaction-grid"></div>
+        <p id="reaction-scope" class="section-footnote">
+          The step descriptions are teaching summaries. The evidence panel
+          distinguishes measured activity from proposed mechanistic detail.
+        </p>
+      </section>
+
+      <section
+        id="proteins"
+        class="wrap section"
+        aria-labelledby="proteins-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / MEET THE CATALYSTS</p>
+            <h2 id="proteins-title">Read the protein story.</h2>
+          </div>
+          <p>
+            Sequences invite comparisons. <br />Experiments establish the
+            activity.
+          </p>
+        </div>
+        <div id="enzyme-cards" class="enzyme-grid"></div>
+        <div class="sequence-panel">
+          <div class="sequence-heading">
+            <div>
+              <h3>Side by side, residue by residue.</h3>
+              <p id="alignment-description">
+                Compare the recorded protein sequences.
+              </p>
+            </div>
+            <div id="alignment-metrics" class="alignment-metrics"></div>
+          </div>
+          <div class="sequence-legend">
+            <span
+              ><i class="legend-box match" aria-hidden="true"></i>Identical
+              residue</span
+            ><span
+              ><i class="legend-box different" aria-hidden="true"></i>Different
+              residue</span
+            ><span
+              ><i class="legend-box gap" aria-hidden="true"></i>Alignment
+              gap</span
+            >
+          </div>
+          <div
+            id="sequence-alignment"
+            class="sequence-alignment"
+            tabindex="0"
+            role="region"
+            aria-label="Protein sequence alignment, scroll horizontally if needed"
+          ></div>
+          <p id="alignment-notes" class="fine-print"></p>
+        </div>
+      </section>
+
+      <section
+        id="evidence"
+        class="wrap section evidence-section"
+        aria-labelledby="evidence-title"
+      >
+        <div>
+          <p class="eyebrow">04 / KEEP THE EVIDENCE IN VIEW</p>
+          <h2 id="evidence-title">
+            A model is a view.<br />Evidence is the anchor.
+          </h2>
+          <p class="evidence-intro">
+            This lab brings structures, characterized activities, and protein
+            sequences together. Follow the sources to see what was measured and
+            where the interpretation stops.
+          </p>
+          <div class="boundary-note">
+            <span class="arrow" aria-hidden="true"></span>
+            <p>
+              These examples explain known chemistry. They do not predict a new
+              enzyme, a new fragrance, or how a molecule will smell to a person.
+            </p>
+          </div>
+        </div>
+        <div id="evidence-list" class="evidence-list"></div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <span class="brand-small">✳ Nature’s Perfume Lab</span>
+      <p>Built for inspection, questions, and reproducible learning.</p>
+      <a href="#top"
+        >Back to top <span class="arrow up" aria-hidden="true"></span
+      ></a>
+    </footer>
+    <noscript
+      ><p class="wrap notice">
+        JavaScript is needed for the interactive molecular views. The repository
+        documentation provides the methods and source records.
+      </p></noscript
+    >
+  </body>
+</html>

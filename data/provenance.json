@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "scope": "Pinned source snapshots and curated input records; Markdown documentation is not an analysis input.",
+  "files": [
+    {
+      "path": "data/curated/chemistry.json",
+      "sha256": "8e546dc5939c5c5314a2e4a2ee8e70975ff9703214d81f90dc3441ca134206c0",
+      "bytes": 7399
+    },
+    {
+      "path": "data/curated/enzymes.json",
+      "sha256": "65acac05c18a5e87de7c6f513e8a283b948a3a360ea148cb37946b8b474493df",
+      "bytes": 15007
+    },
+    {
+      "path": "data/enzyme-sources.json",
+      "sha256": "d4f7ec12aa0593f1729cee7ec70a146e8cae05b676cf6122277ced693625c684",
+      "bytes": 4435
+    },
+    {
+      "path": "data/sources/5uv0.cif",
+      "sha256": "419459462350695b119b75fb7864243b40b3290cb317573bad3378218ffb77ec",
+      "bytes": 505888
+    },
+    {
+      "path": "data/sources/compound-sources.json",
+      "sha256": "c25c3dbaa356a5187e9e88f9ebb9b3bcd42de1cf43e118f8dfd485b543f94308",
+      "bytes": 5478
+    },
+    {
+      "path": "data/sources/diphosphoric-acid.pubchem.json",
+      "sha256": "ae495fd53df2013e9c48ff8868bc4c7da15ebbe01227a2f2d384f3a8202f1fd1",
+      "bytes": 298
+    },
+    {
+      "path": "data/sources/geranyl-diphosphate.pubchem.json",
+      "sha256": "d93e773215c282366a8847dc84826277ebb9d7169c1772e576ae8dfaac463bed",
+      "bytes": 385
+    },
+    {
+      "path": "data/sources/r-limonene.pubchem.json",
+      "sha256": "040d5eb0f780a10bde7c92ae9e328281760ee5112864670bccdd6d5746097dc4",
+      "bytes": 320
+    },
+    {
+      "path": "data/sources/r-linalool.pubchem.json",
+      "sha256": "3b2b984d0031dcab9bc0ec02f6ea50bf68ea8d275e6072f54cb9e87faa286af7",
+      "bytes": 323
+    },
+    {
+      "path": "data/sources/rcsb_5UV0_chain_A.json",
+      "sha256": "79fdbbc782f19b68e9d3ea574ee7ef4c57ec9b095e086292387cb588007a6889",
+      "bytes": 48431
+    },
+    {
+      "path": "data/sources/rcsb_5UV0_entity_1.json",
+      "sha256": "d4b43294d015d064add4b3512d8f3df89e51c12b2d523e6432a4831bf6fe362e",
+      "bytes": 31672
+    },
+    {
+      "path": "data/sources/rcsb_5UV0_entry.json",
+      "sha256": "176fa05b44d1eef77fd90a17ba85702c17e65a124c980711c83e3d2b60f19600",
+      "bytes": 10750
+    },
+    {
+      "path": "data/sources/uniprot_A0A1C9J6A7.fasta",
+      "sha256": "e628058456cbb19d198435b6f67fd39f4646b29bbdd2d67c0c678aa05e4c278c",
+      "bytes": 720
+    },
+    {
+      "path": "data/sources/uniprot_A0A1C9J6A7.json",
+      "sha256": "5a33cef91454152c474c765ded92e91acdc705b6b267831ea464d57e651ac016",
+      "bytes": 24509
+    },
+    {
+      "path": "data/sources/uniprot_Q2XSC5.fasta",
+      "sha256": "e156c5b152750449150b00fe36d609dabcabeab9cd1eda3ca801dcef5bf7e617",
+      "bytes": 662
+    },
+    {
+      "path": "data/sources/uniprot_Q2XSC5.json",
+      "sha256": "94723b467b7600af3b705f1b66d6c11b6703c9f4f0c4dee192eda00a235103bb",
+      "bytes": 11389
+    },
+    {
+      "path": "data/sources/water.pubchem.json",
+      "sha256": "d2deb0b08f6ac01e69253bab58be9f3c079c1eca25a68ff54e4c9a8920928e76",
+      "bytes": 237
+    }
+  ]
+}

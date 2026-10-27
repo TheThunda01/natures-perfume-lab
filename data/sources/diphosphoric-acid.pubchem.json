@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 1023,
+        "MolecularFormula": "H4O7P2",
+        "SMILES": "OP(=O)(O)OP(=O)(O)O",
+        "InChI": "InChI=1S/H4O7P2/c1-8(2,3)7-9(4,5)6/h(H2,1,2,3)(H2,4,5,6)",
+        "InChIKey": "XPPKVPWEQAFLFU-UHFFFAOYSA-N"
+      }
+    ]
+  }
+}

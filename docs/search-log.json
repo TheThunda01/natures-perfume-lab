@@ -1,0 +1,355 @@
+{
+  "search_date": "2026-10-27",
+  "scope": "Focused narrative source review for a computational comparison of Citrus sinensis (+)-limonene synthase and Lavandula angustifolia LaLINS (R)-linalool synthase, with a 2026 structure-feature classification paper as context.",
+  "inclusion_criteria": [
+    "Primary characterization supporting the selected enzyme identity, product report or structural interpretation.",
+    "Foundational direct experimental examples needed to explain product specificity and its limits.",
+    "The user-supplied 2026 paper and its version-pinned dataset/code record."
+  ],
+  "exclusion_criteria": [
+    "Studies outside the selected enzyme pair and limited conceptual background.",
+    "Reviews or unrelated pathways when primary evidence was available.",
+    "No exclusion based on agreement with the intended narrative."
+  ],
+  "searches": [
+    {
+      "source": "PubMed via Healthcare Public Data connector",
+      "query": "limonene synthase crystal structure",
+      "query_translation": "(\"pinene cyclase i\"[Supplementary Concept] OR \"pinene cyclase i\"[All Fields] OR \"limonene synthase\"[All Fields]) AND (\"crystal\"[All Fields] OR \"crystal s\"[All Fields] OR \"crystalization\"[All Fields] OR \"crystalize\"[All Fields] OR \"crystalized\"[All Fields] OR \"crystalizes\"[All Fields] OR \"crystallisation\"[All Fields] OR \"crystallisations\"[All Fields] OR \"crystallise\"[All Fields] OR \"crystallised\"[All Fields] OR \"crystallises\"[All Fields] OR \"crystallising\"[All Fields] OR \"crystallization\"[MeSH Terms] OR \"crystallization\"[All Fields] OR \"crystallizations\"[All Fields] OR \"crystallize\"[All Fields] OR \"crystallized\"[All Fields] OR \"crystallizes\"[All Fields] OR \"crystallizing\"[All Fields] OR \"crystals\"[All Fields]) AND (\"structural\"[All Fields] OR \"structurally\"[All Fields] OR \"structurals\"[All Fields] OR \"structuration\"[All Fields] OR \"structurations\"[All Fields] OR \"structure\"[All Fields] OR \"structure s\"[All Fields] OR \"structured\"[All Fields] OR \"structures\"[All Fields] OR \"structuring\"[All Fields]) AND 2000/01/01:2019/12/31[Date - Publication]",
+      "date_from": "2000",
+      "date_to": "2019",
+      "date_type": "publication",
+      "sort": "relevance",
+      "page_size": 8,
+      "offsets": [
+        0,
+        8
+      ],
+      "total_count": 9,
+      "retrieved_count": 9,
+      "returned_pmids": [
+        "28841019",
+        "28272875",
+        "26750479",
+        "17372193",
+        "12432096",
+        "25733883",
+        "12941302",
+        "17949678",
+        "28272876"
+      ],
+      "pagination_complete": true,
+      "scope_note": "Complete retrieval for this narrow query only; not a comprehensive topic search."
+    },
+    {
+      "source": "PubMed via Healthcare Public Data connector",
+      "query": "linalool synthase characterization structure",
+      "query_translation": "(\"linalool\"[Supplementary Concept] OR \"linalool\"[All Fields]) AND (\"nitric oxide synthase\"[Supplementary Concept] OR \"nitric oxide synthase\"[All Fields] OR \"synthase\"[All Fields] OR \"nitric oxide synthase\"[MeSH Terms] OR (\"nitric\"[All Fields] AND \"oxide\"[All Fields] AND \"synthase\"[All Fields]) OR \"synthase s\"[All Fields] OR \"synthases\"[All Fields]) AND (\"characterisation\"[All Fields] OR \"characterisations\"[All Fields] OR \"characterise\"[All Fields] OR \"characterised\"[All Fields] OR \"characterises\"[All Fields] OR \"characterising\"[All Fields] OR \"characterization\"[All Fields] OR \"characterizations\"[All Fields] OR \"characterize\"[All Fields] OR \"characterized\"[All Fields] OR \"characterizes\"[All Fields] OR \"characterizing\"[All Fields]) AND (\"structural\"[All Fields] OR \"structurally\"[All Fields] OR \"structurals\"[All Fields] OR \"structuration\"[All Fields] OR \"structurations\"[All Fields] OR \"structure\"[All Fields] OR \"structure s\"[All Fields] OR \"structured\"[All Fields] OR \"structures\"[All Fields] OR \"structuring\"[All Fields]) AND 2000/01/01:2019/12/31[Date - Publication]",
+      "date_from": "2000",
+      "date_to": "2019",
+      "date_type": "publication",
+      "sort": "relevance",
+      "page_size": 8,
+      "offsets": [
+        0,
+        8
+      ],
+      "total_count": 9,
+      "retrieved_count": 9,
+      "returned_pmids": [
+        "12176064",
+        "24636455",
+        "31138625",
+        "28966840",
+        "21504898",
+        "25380987",
+        "29948128",
+        "15310829",
+        "21868399"
+      ],
+      "pagination_complete": true,
+      "scope_note": "Complete retrieval for this narrow query only; not a comprehensive topic search."
+    },
+    {
+      "source": "PubMed direct identifier lookup",
+      "query": "42799051",
+      "lookup_reason": "User-supplied 2026 paper identifier",
+      "retrieved_count": 1,
+      "returned_pmids": [
+        "42799051"
+      ]
+    },
+    {
+      "source": "PubMed direct identifier lookup",
+      "query": "17662687",
+      "lookup_reason": "Selected lavender enzyme identified during sequence-source audit",
+      "retrieved_count": 1,
+      "returned_pmids": [
+        "17662687"
+      ]
+    }
+  ],
+  "screening": [
+    {
+      "pmid": "28841019",
+      "title": "Structural and Chemical Biology of Terpenoid Cyclases.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28841019/"
+    },
+    {
+      "pmid": "28272875",
+      "title": "Functional and Structural Characterization of a (+)-Limonene Synthase from Citrus sinensis.",
+      "decision": "include",
+      "reason": "Primary experimental characterization and structure of the selected Citrus sinensis (+)-limonene synthase.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28272875/"
+    },
+    {
+      "pmid": "26750479",
+      "title": "Expression, crystallization and structure elucidation of γ-terpinene synthase from Thymus vulgaris.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26750479/"
+    },
+    {
+      "pmid": "17372193",
+      "title": "Structure of limonene synthase, a simple model for terpenoid cyclase catalysis.",
+      "decision": "include",
+      "reason": "Foundational experimental limonene structure and substrate-analogue context; background, not the selected citrus enzyme.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17372193/"
+    },
+    {
+      "pmid": "12432096",
+      "title": "Bornyl diphosphate synthase: structure and strategy for carbocation manipulation by a terpenoid cyclase.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12432096/"
+    },
+    {
+      "pmid": "25733883",
+      "title": "Functional analysis of (4S)-limonene synthase mutants reveals determinants of catalytic outcome in a model monoterpene synthase.",
+      "decision": "include",
+      "reason": "Mutational evidence that changes in specific active-site residues can alter activity and product profiles; not a universal sequence rule.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25733883/"
+    },
+    {
+      "pmid": "12941302",
+      "title": "Alternative termination chemistries utilized by monoterpene cyclases: chimeric analysis of bornyl diphosphate, 1,8-cineole, and sabinene synthases.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12941302/"
+    },
+    {
+      "pmid": "17949678",
+      "title": "Inhibition of monoterpene cyclases by inert analogues of geranyl diphosphate and linalyl diphosphate.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17949678/"
+    },
+    {
+      "pmid": "28272876",
+      "title": "Structural Characterization of Early Michaelis Complexes in the Reaction Catalyzed by (+)-Limonene Synthase from Citrus sinensis Using Fluorinated Substrate Analogues.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28272876/"
+    },
+    {
+      "pmid": "12176064",
+      "title": "Molecular cloning and characterization of a new linalool synthase.",
+      "decision": "include",
+      "reason": "Earlier mint linalool characterization demonstrating that linalool enzymes occur in distinct species; not the selected lavender enzyme.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12176064/"
+    },
+    {
+      "pmid": "24636455",
+      "title": "Transcriptome profiling, and cloning and characterization of the main monoterpene synthases of Coriandrum sativum L.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24636455/"
+    },
+    {
+      "pmid": "31138625",
+      "title": "Gene Networks Underlying Cannabinoid and Terpenoid Accumulation in Cannabis.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31138625/"
+    },
+    {
+      "pmid": "28966840",
+      "title": "Structural Basis of Catalysis in the Bacterial Monoterpene Synthases Linalool Synthase and 1,8-Cineole Synthase.",
+      "decision": "include",
+      "reason": "Experimental bacterial linalool example that illustrates substrate dependence and limits of bound analogue interpretation; not the selected lavender enzyme.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28966840/"
+    },
+    {
+      "pmid": "21504898",
+      "title": "Biochemical characterization and homology modeling of methylbutenol synthase and implications for understanding hemiterpene synthase evolution in plants.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21504898/"
+    },
+    {
+      "pmid": "25380987",
+      "title": "Zibibbo nero characterization, a red-wine grape revertant of muscat of Alexandria.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25380987/"
+    },
+    {
+      "pmid": "29948128",
+      "title": "RNA-Seq in the discovery of a sparsely expressed scent-determining monoterpene synthase in lavender (Lavandula).",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29948128/"
+    },
+    {
+      "pmid": "15310829",
+      "title": "Functional characterization of nine Norway Spruce TPS genes and evolution of gymnosperm terpene synthases of the TPS-d subfamily.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15310829/"
+    },
+    {
+      "pmid": "21868399",
+      "title": "Functional effect of grapevine 1-deoxy-D-xylulose 5-phosphate synthase substitution K284N on Muscat flavour formation.",
+      "decision": "exclude",
+      "reason": "Not required for the selected citrus/lavender pair or its focused structural-evidence discussion; no claim of scientific irrelevance.",
+      "screened_at": "title and metadata",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21868399/"
+    },
+    {
+      "pmid": "42799051",
+      "title": "Pockets to products: a data-driven approach for classification of monoterpene synthases.",
+      "decision": "include",
+      "reason": "Current structure-feature classification study and source of the ATC data; inspect selection, labels and limits rather than reproduce ML performance.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42799051/"
+    },
+    {
+      "pmid": "17662687",
+      "title": "Cloning and functional characterization of three terpene synthases from lavender (Lavandula angustifolia).",
+      "decision": "include",
+      "reason": "Primary functional characterization of the selected lavender LaLINS; distinguish it from the separate LaLIMS enzyme.",
+      "screened_at": "abstract and metadata; full-text sections where available",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17662687/"
+    }
+  ],
+  "summary": {
+    "publication_records_retrieved": 20,
+    "distinct_publications": 20,
+    "publications_included": 7,
+    "publications_excluded": 13,
+    "supplementary_repository_records": 1
+  },
+  "access_record": [
+    {
+      "pmid": "42799051",
+      "access": "Full body retrieved; introduction, methods, results, limitations and data availability inspected.",
+      "characters": 42772
+    },
+    {
+      "pmid": "28272875",
+      "access": "Full body retrieved; construct, product measurements, structure and interpretation sections inspected.",
+      "characters": 37005
+    },
+    {
+      "pmid": "28966840",
+      "access": "Full body retrieved in two pages; introduction and selected product/structure/conclusion sections inspected.",
+      "characters": 57142,
+      "offsets": [
+        0,
+        50000
+      ]
+    },
+    {
+      "pmid": "17372193",
+      "access": "Abstract and metadata; automated full-text request returned an internal error twice. Rights lookup reported full_text_retrieval_allowed=false."
+    },
+    {
+      "pmid": "25733883",
+      "access": "Abstract and metadata; automated full-text request returned an internal error. Rights lookup reported full_text_retrieval_allowed=false."
+    },
+    {
+      "pmid": "17662687",
+      "access": "Abstract and metadata; no PMCID returned. Primary full text not inspected."
+    },
+    {
+      "pmid": "12176064",
+      "access": "Abstract and metadata; no PMCID returned. Primary full text not inspected."
+    }
+  ],
+  "supplementary_lookups": [
+    {
+      "source": "GitHub",
+      "url": "https://github.com/cathaloraghallaigh/ATC/tree/3216a2cdc89a97a9cc28c65011c628717159f7e4",
+      "files": [
+        "README.md",
+        "LICENSE",
+        "CharacterisedSeqRef.csv",
+        "FullDataset.csv"
+      ],
+      "repository_commit": "3216a2cdc89a97a9cc28c65011c628717159f7e4",
+      "role": "Inspect dataset structure, selected sequence records, class fractions, source citations and license; not counted as another publication."
+    },
+    {
+      "source": "UniProtKB",
+      "url": "https://www.uniprot.org/uniprotkb/A0A1C9J6A7/entry",
+      "record": "A0A1C9J6A7",
+      "version": "entry34 / sequence2",
+      "accessed": "2026-10-27",
+      "files": [
+        "data/sources/uniprot_A0A1C9J6A7.json",
+        "data/sources/uniprot_A0A1C9J6A7.fasta"
+      ],
+      "role": "Inspect selected sequence and evidence attached to function, catalysis and localization; not counted as a publication."
+    },
+    {
+      "source": "UniProtKB",
+      "url": "https://www.uniprot.org/uniprotkb/Q2XSC5/entry",
+      "record": "Q2XSC5",
+      "version": "entry63 / sequence1",
+      "accessed": "2026-10-27",
+      "files": [
+        "data/sources/uniprot_Q2XSC5.json",
+        "data/sources/uniprot_Q2XSC5.fasta"
+      ],
+      "role": "Inspect selected sequence and distinguish experimental functional evidence from cofactor annotations by similarity; not counted as a publication."
+    },
+    {
+      "source": "RCSB PDB",
+      "url": "https://www.rcsb.org/structure/5UV0",
+      "record": "5UV0",
+      "accessed": "2026-10-27",
+      "files": [
+        "data/sources/rcsb_5UV0_entry.json",
+        "data/sources/rcsb_5UV0_entity_1.json",
+        "data/sources/rcsb_5UV0_chain_A.json",
+        "data/sources/5uv0.cif"
+      ],
+      "role": "Inspect primary citation, experimental method, coordinate coverage and sequence-discrepancy annotation; compare deposited polymer with current UniProt; not counted as a publication."
+    }
+  ],
+  "limitations": [
+    "Only two narrow PubMed topic queries and two direct identifier lookups were used; no systematic-review claim.",
+    "The date-restricted searches target foundational literature, not a complete search for work after 2019.",
+    "Availability of full text does not imply every experimental or supplementary claim was independently audited.",
+    "No new sequence experiments, odor measurements, model training or external validation were conducted by this review."
+  ]
+}

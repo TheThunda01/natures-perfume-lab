@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite this software and the underlying data and method sources relevant to your use. Record the commit you used."
+title: "Nature's perfume lab"
+abstract: "A reproducible computational case study connecting a shared terpene precursor, selected chemical structures, enzyme sequences, and one experimental protein structure."
+type: software
+authors:
+  - family-names: Huynh
+    given-names: Brandon J.
+license: MIT
+repository-code: "https://github.com/TheThunda01/natures-perfume-lab"

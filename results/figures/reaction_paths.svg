@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+<title id="title">One precursor, two documented enzyme products</title>
+<desc id="desc">Geranyl diphosphate has ten carbons. Sweet orange limonene synthase forms a ring and produces R-limonene. Lavender linalool synthase forms an open-chain alcohol, R-linalool. All ten carbons remain in either selected product.</desc>
+<rect width="960" height="360" rx="18" fill="#f7f5ee"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#243c30"><text x="40" y="48" font-size="25" font-weight="bold">One precursor, two reaction routes</text>
+<rect x="34" y="135" width="255" height="88" rx="12" fill="#dde9df"/><text x="55" y="170" font-size="20">Geranyl diphosphate</text><text x="55" y="200" font-size="16">10 carbon atoms</text>
+<path d="M289 179 H360 V101 H514 M360 179 V258 H514" stroke="#516859" stroke-width="3" fill="none"/>
+<path d="M505 95 L515 101 L505 107 M505 252 L515 258 L505 264" fill="none" stroke="#516859" stroke-width="3"/>
+<rect x="525" y="65" width="400" height="107" rx="12" fill="#f0dfad"/><text x="545" y="97" font-size="19">Sweet orange → (4R)-limonene</text><text x="545" y="124" font-size="15">Ring formation; hydrocarbon product</text><text x="545" y="150" font-size="15">10 carbons retained · C₁₀H₁₆</text>
+<rect x="525" y="212" width="400" height="107" rx="12" fill="#e6dff1"/><text x="545" y="244" font-size="19">Lavender → (3R)-linalool</text><text x="545" y="271" font-size="15">Water capture; open-chain alcohol</text><text x="545" y="297" font-size="15">10 carbons retained · C₁₀H₁₈O</text>
+<text x="34" y="340" font-size="12">Selected product branches; full balanced equations and source evidence are recorded separately.</text></g></svg>

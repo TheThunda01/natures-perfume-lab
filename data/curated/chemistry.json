@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "source_manifest": "data/sources/compound-sources.json",
+  "scope": "Two known, curated product branches from geranyl diphosphate; no enzyme-activity, odor, isotope-enrichment or yield prediction.",
+  "numbering": {
+    "definition": "Persistent carbon lineage labels, not a universal product atom-numbering system. GPP C1 is the carbon attached to the diphosphate oxygen; C1–C8 follow the eight-carbon main chain, C9 is the methyl at C3, and C10 is the second methyl at C7.",
+    "symmetry_note": "The unlabeled connectivity graph admits a swap of the two methyl carbons attached to GPP C7. C8/C10 select one representative map; a position-specific isotope experiment would require its own stereochemical and mechanistic specification. This graph ambiguity does not assert that the two methyl groups have identical spectroscopic environments.",
+    "tracer_scope": "A selected carbon label illustrates this declared map only. It does not predict enrichment, exchange, mixtures, fluxes or kinetic isotope effects."
+  },
+  "protonation_note": "Full equations below use the neutral species represented in the PubChem snapshots so formula and formal-charge balance can be checked explicitly. Enzyme databases often use charged species and different proton conventions; the neutral equations are not physiological proton stoichiometry claims. Carbon-only diagrams omit water and diphosphate for readability.",
+  "compounds": {
+    "gpp": {
+      "id": "gpp",
+      "name": "(2E)-Geranyl diphosphate",
+      "source_id": "gpp",
+      "mapped_smiles": "[CH3:8][C:7](=[CH:6][CH2:5][CH2:4]/[C:3](=[CH:2]/[CH2:1]OP(=O)(O)OP(=O)(O)O)/[CH3:9])[CH3:10]",
+      "expected_formula": "C10H20O7P2",
+      "expected_carbon_count": 10,
+      "expected_cip": {},
+      "expected_double_bond_stereo": [
+        {
+          "atoms": [
+            2,
+            3
+          ],
+          "stereo": "STEREOE"
+        }
+      ],
+      "representation": "Neutral diphosphoric-acid ester as returned by PubChem; not a claim about its predominant physiological protonation state."
+    },
+    "limonene": {
+      "id": "limonene",
+      "name": "(4R)-(+)-Limonene",
+      "source_id": "limonene",
+      "mapped_smiles": "[CH3:9][C:3]1=[CH:2][CH2:1][C@@H:6]([CH2:5][CH2:4]1)[C:7](=[CH2:8])[CH3:10]",
+      "expected_formula": "C10H16",
+      "expected_carbon_count": 10,
+      "expected_cip": {
+        "6": "R"
+      },
+      "expected_double_bond_stereo": [],
+      "representation": "The R enantiomer documented for the selected Citrus sinensis enzyme. Source compound numbering calls this center C4; its lineage label here is C6."
+    },
+    "linalool": {
+      "id": "linalool",
+      "name": "(3R)-(−)-Linalool",
+      "source_id": "linalool",
+      "mapped_smiles": "[CH3:8][C:7](=[CH:6][CH2:5][CH2:4][C@:3]([CH3:9])([CH:2]=[CH2:1])O)[CH3:10]",
+      "expected_formula": "C10H18O",
+      "expected_carbon_count": 10,
+      "expected_cip": {
+        "3": "R"
+      },
+      "expected_double_bond_stereo": [],
+      "representation": "The R enantiomer documented for the selected Lavandula angustifolia enzyme."
+    }
+  },
+  "auxiliary_compounds": {
+    "water": {
+      "id": "water",
+      "source_id": "water",
+      "smiles": "O",
+      "expected_formula": "H2O"
+    },
+    "diphosphoric_acid": {
+      "id": "diphosphoric_acid",
+      "source_id": "diphosphoric_acid",
+      "smiles": "OP(=O)(O)OP(=O)(O)O",
+      "expected_formula": "H4O7P2"
+    }
+  },
+  "reactions": [
+    {
+      "id": "limonene_branch",
+      "title": "Fold the carbon chain into a ring",
+      "enzyme_id": "limonene_synthase",
+      "substrate_id": "gpp",
+      "product_id": "limonene",
+      "expected_carbon_bond_changes": [
+        {
+          "atoms": [
+            1,
+            6
+          ],
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "atoms": [
+            6,
+            7
+          ],
+          "before": 2.0,
+          "after": 1.0
+        },
+        {
+          "atoms": [
+            7,
+            8
+          ],
+          "before": 1.0,
+          "after": 2.0
+        }
+      ],
+      "neutral_equation": {
+        "reactants": {
+          "gpp": 1
+        },
+        "products": {
+          "limonene": 1,
+          "diphosphoric_acid": 1
+        },
+        "text": "Neutral GPP → (4R)-limonene + diphosphoric acid"
+      },
+      "steps": [
+        {
+          "title": "Activate the allylic diphosphate",
+          "text": "The enzyme promotes diphosphate departure in a metal-supported active site. The resulting allylic chemistry occurs in the enzyme, not as an unconstrained carbocation in solution."
+        },
+        {
+          "title": "Reorient and close the ring",
+          "text": "The canonical mechanistic model includes allylic isomerization through linalyl diphosphate, allowing reorientation before cyclization. In the displayed carbon map, ring closure joins C1 and C6."
+        },
+        {
+          "title": "Release a hydrocarbon",
+          "text": "Proton loss terminates the cyclization sequence to give limonene. All ten substrate carbons remain, and the enzyme-selected product is the (4R) enantiomer."
+        }
+      ],
+      "evidence_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28272875/"
+      ],
+      "mechanism_status": "Curated explanatory mechanism; the graph changes validate net carbon connectivity, not the existence or lifetime of every intermediate."
+    },
+    {
+      "id": "linalool_branch",
+      "title": "Capture water without closing a ring",
+      "enzyme_id": "linalool_synthase",
+      "substrate_id": "gpp",
+      "product_id": "linalool",
+      "expected_carbon_bond_changes": [
+        {
+          "atoms": [
+            1,
+            2
+          ],
+          "before": 1.0,
+          "after": 2.0
+        },
+        {
+          "atoms": [
+            2,
+            3
+          ],
+          "before": 2.0,
+          "after": 1.0
+        }
+      ],
+      "neutral_equation": {
+        "reactants": {
+          "gpp": 1,
+          "water": 1
+        },
+        "products": {
+          "linalool": 1,
+          "diphosphoric_acid": 1
+        },
+        "text": "Neutral GPP + water → (3R)-linalool + diphosphoric acid"
+      },
+      "steps": [
+        {
+          "title": "Activate the same precursor",
+          "text": "The linalool branch starts from geranyl diphosphate, the same ten-carbon precursor as the limonene branch."
+        },
+        {
+          "title": "Capture water at the allylic center",
+          "text": "Water capture yields an acyclic tertiary alcohol. In this representative carbon map, the hydroxyl-bearing carbon is C3 and the C2–C3 double bond becomes C1–C2. The carbon skeleton does not form a ring."
+        },
+        {
+          "title": "Retain the enzyme-selected stereochemistry",
+          "text": "The selected lavender enzyme produces (3R)-linalool. This route is not an oxidation of limonene; the net reaction consumes water and releases diphosphate."
+        }
+      ],
+      "evidence_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/17662687/",
+        "https://www.uniprot.org/uniprotkb/Q2XSC5/entry",
+        "https://www.rhea-db.org/rhea/15809"
+      ],
+      "mechanism_status": "Curated explanatory account consistent with the net catalytic annotation; detailed water/proton trajectories are not inferred from the carbon map."
+    }
+  ]
+}

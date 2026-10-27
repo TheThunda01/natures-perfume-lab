@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "rdkit_version": "2025.09.1",
+  "scope": "Two-dimensional structure layout; not an experimental or computed three-dimensional conformation.",
+  "source_manifest_sha256": "9cb85f361767e03e2c3580d26d3699cfe6f6068f3ca82f13e17c3522f7e4b561",
+  "curation_sha256": "8e546dc5939c5c5314a2e4a2ee8e70975ff9703214d81f90dc3441ca134206c0",
+  "molecules": {
+    "gpp": {
+      "source": {
+        "id": "gpp",
+        "cid": 445995,
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445995",
+        "sha256": "d93e773215c282366a8847dc84826277ebb9d7169c1772e576ae8dfaac463bed"
+      },
+      "layout": {
+        "method": "RDKit Compute2DCoords",
+        "scope": "Two-dimensional structure layout; not an experimental or computed three-dimensional conformation."
+      },
+      "sha256": "06c19d0068a19b7b1f7748700c26c189a34a8fc3d717d01154b0ab2a42323bf8"
+    },
+    "limonene": {
+      "source": {
+        "id": "limonene",
+        "cid": 440917,
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/440917",
+        "sha256": "040d5eb0f780a10bde7c92ae9e328281760ee5112864670bccdd6d5746097dc4"
+      },
+      "layout": {
+        "method": "RDKit Compute2DCoords",
+        "scope": "Two-dimensional structure layout; not an experimental or computed three-dimensional conformation."
+      },
+      "sha256": "2fac07eebec0974c6f73439b8cdcc9bcb034d4e47a2bfdbf7ef27c2dab5aa0d3"
+    },
+    "linalool": {
+      "source": {
+        "id": "linalool",
+        "cid": 443158,
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/443158",
+        "sha256": "3b2b984d0031dcab9bc0ec02f6ea50bf68ea8d275e6072f54cb9e87faa286af7"
+      },
+      "layout": {
+        "method": "RDKit Compute2DCoords",
+        "scope": "Two-dimensional structure layout; not an experimental or computed three-dimensional conformation."
+      },
+      "sha256": "c1693e9993f72d3e493151cf04a41aca49e8022925a26ea17747a6aedfe1cb65"
+    }
+  }
+}

@@ -28,3 +28,5 @@ jobs:
         run: python verify_results.py --results-dir .reproduction
       - name: Check documentation
         run: python scripts/check_docs.py
+      - name: Verify molecular-viewer example
+        run: python export_molecules.py --verify-dir examples/molecules

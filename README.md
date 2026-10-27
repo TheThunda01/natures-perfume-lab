@@ -24,6 +24,7 @@ These records come from different species and assay preparations. They do not fo
 - Uses Biopython to align selected enzyme sequences and report the scoring and denominator behind their similarity.
 - Checks the citrus structure’s modeled alpha-carbon (Cα) positions against its reference sequence. It does not infer the lavender enzyme’s pocket or compare pockets across the pair.
 - Produces a report, machine-readable results, and a static explorer for inspecting the same case.
+- Exports the three curated structures as checked SDF files for molecular viewers, preserving stereochemistry, carbon labels, and source attribution.
 
 The [2026 monoterpene-classification study](docs/references.md#o-raghallaigh-2026) inspired this small exploration. This project compares two documented cases; it does not reproduce or train that study’s classifier. Carbon labels show a curated correspondence between the starting compound and each product, not a simulated reaction or isotope-tracing experiment.
 
@@ -58,6 +59,15 @@ python -m unittest discover -s tests -v
 
 The source snapshots are bundled, so the analysis needs no network after installation. Use the separate `.reproduction/` directory to keep the recorded [example results](results/report.md) available for comparison. Read the [practical-use contract](docs/practical-use.md) before choosing another output path.
 
+For optional molecular-viewer inspection, create and check a new bundle:
+
+```sh
+python export_molecules.py --output-dir .reproduction/molecular-inspection
+python export_molecules.py --verify-dir .reproduction/molecular-inspection
+```
+
+Open the individual `.sdf` files in Avogadro. These are **2D structure layouts**, not experimental or computed 3D conformations. The [inspection guide](docs/molecular-inspection.md) explains why this matters and how to preserve the original files.
+
 To open the static explorer:
 
 ```sh
@@ -87,6 +97,8 @@ The carbon checks distinguish two outcomes without losing the shared ten-carbon 
 **Figure 2. Sequence identity needs a denominator.** The displayed 43.39% uses only paired-residue columns. These two full canonical sequences come from different species and experiments; this comparison does not identify residues that cause a product switch.
 
 The [aligned FASTA](results/alignment.fasta), [per-column residue table](results/residue_alignment.csv), [chemical table](results/chemical_summary.csv), and [complete analysis JSON](results/analysis.json) expose the values behind the figures.
+
+The [molecular-viewer example](examples/molecules/README.md) provides GPP, limonene, and linalool SDF files plus a verification receipt. All ten carbon labels survive serialization, and the parsed graphs and stereochemistry match the attributed source records.
 
 Read the [report](results/report.md) for the complete results and their limits. The [methods](docs/methods.md) explain how each quantity is calculated.
 

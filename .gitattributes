@@ -8,3 +8,5 @@ data/sources/** -whitespace linguist-vendored
 *.svg -whitespace
 results/** linguist-generated
 web/data.js linguist-generated
+# Preserve the exact RDKit SDF serialization, including property-header blanks.
+examples/molecules/*.sdf -text -whitespace

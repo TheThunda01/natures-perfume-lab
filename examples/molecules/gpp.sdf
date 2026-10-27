@@ -1,0 +1,67 @@
+(2E)-Geranyl diphosphate
+     RDKit          2D
+
+ 19 18  0  0  0  0  0  0  0  0999 V2000
+    8.2382   -0.1565    0.0000 C   0  0  0  0  0  0  0  0  0  8  0  0
+    6.8474    0.4052    0.0000 C   0  0  0  0  0  0  0  0  0  7  0  0
+    5.6655   -0.5184    0.0000 C   0  0  0  0  0  0  0  0  0  6  0  0
+    4.2746    0.0433    0.0000 C   0  0  0  0  0  0  0  0  0  5  0  0
+    3.0927   -0.8804    0.0000 C   0  0  0  0  0  0  0  0  0  4  0  0
+    1.7019   -0.3187    0.0000 C   0  0  0  0  0  0  0  0  0  3  0  0
+    0.5200   -1.2423    0.0000 C   0  0  0  0  0  0  0  0  0  2  0  0
+   -0.8709   -0.6806    0.0000 C   0  0  0  0  0  0  0  0  0  1  0  0
+   -2.0528   -1.6042    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4436   -1.0425    0.0000 P   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8819    0.3483    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0053   -2.4334    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8345   -0.4808    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0434    1.0046    0.0000 P   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.5288    0.7956    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5580    1.2135    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2524    2.4900    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4929    1.1667    0.0000 C   0  0  0  0  0  0  0  0  0  9  0  0
+    6.6384    1.8906    0.0000 C   0  0  0  0  0  0  0  0  0 10  0  0
+  1  2  1  0
+  2  3  2  3
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  2  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 10 12  1  0
+ 10 13  1  0
+ 13 14  1  0
+ 14 15  2  0
+ 14 16  1  0
+ 14 17  1  0
+  6 18  1  0
+  2 19  1  0
+M  END
+>  <compound_id>  (1) 
+gpp
+
+>  <source_cid>  (1) 
+445995
+
+>  <source_url>  (1) 
+https://pubchem.ncbi.nlm.nih.gov/compound/445995
+
+>  <source_sha256>  (1) 
+d93e773215c282366a8847dc84826277ebb9d7169c1772e576ae8dfaac463bed
+
+>  <coordinate_units>  (1) 
+drawing units
+
+>  <coordinate_scope>  (1) 
+Two-dimensional structure layout; not an experimental or computed three-dimensional conformation.
+
+>  <carbon_labels>  (1) 
+Atom-map numbers 1-10 are the curated carbon-lineage labels, not IUPAC atom numbers.
+
+>  <protonation>  (1) 
+Neutral diphosphoric-acid ester as returned by PubChem; not a claim about its predominant physiological protonation state.
+
+$$$$

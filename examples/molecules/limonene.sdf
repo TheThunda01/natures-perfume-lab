@@ -1,0 +1,50 @@
+(4R)-(+)-Limonene
+     RDKit          2D
+
+ 10 10  0  0  0  0  0  0  0  0999 V2000
+    3.7500    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  9  0  0
+    2.2500   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  3  0  0
+    1.5000   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  2  0  0
+   -0.0000   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  1  0  0
+   -0.7500    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  6  0  0
+    0.0000    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  5  0  0
+    1.5000    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  4  0  0
+   -2.2500    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  7  0  0
+   -3.0000    1.2990    0.0000 C   0  0  0  0  0  0  0  0  0  8  0  0
+   -3.0000   -1.2990    0.0000 C   0  0  0  0  0  0  0  0  0 10  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  5  8  1  6
+  8  9  2  0
+  8 10  1  0
+  7  2  1  0
+M  END
+>  <compound_id>  (1) 
+limonene
+
+>  <source_cid>  (1) 
+440917
+
+>  <source_url>  (1) 
+https://pubchem.ncbi.nlm.nih.gov/compound/440917
+
+>  <source_sha256>  (1) 
+040d5eb0f780a10bde7c92ae9e328281760ee5112864670bccdd6d5746097dc4
+
+>  <coordinate_units>  (1) 
+drawing units
+
+>  <coordinate_scope>  (1) 
+Two-dimensional structure layout; not an experimental or computed three-dimensional conformation.
+
+>  <carbon_labels>  (1) 
+Atom-map numbers 1-10 are the curated carbon-lineage labels, not IUPAC atom numbers.
+
+>  <protonation>  (1) 
+The R enantiomer documented for the selected Citrus sinensis enzyme. Source compound numbering calls this center C4; its lineage label here is C6.
+
+$$$$

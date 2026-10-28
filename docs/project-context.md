@@ -28,3 +28,7 @@ The intended readers are students and researchers learning to connect molecular 
 - **Reproducibility:** keep source versions, calculation settings, and output checks together.
 
 This project was developed with AI assistance. Its computational results come from the documented code and pinned inputs; its biological context comes from attributed sources. See the [methods](methods.md), [literature review](literature-review.md), and [assumptions](assumptions.md) before interpreting an output.
+
+## Where this fits
+
+Continue to the [enzyme kinetics workbench](https://github.com/TheThunda01/enzyme-kinetics-workbench) to ask what reaction-rate measurements can reveal about a fitted model. It uses a separate archived dataset. The link is a reading route from molecular evidence to quantitative questions, not a kinetic analysis of the enzymes shown here.

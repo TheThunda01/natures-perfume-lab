@@ -10,6 +10,8 @@ The aim is to make the connection between chemistry and proteins easier to explo
 
 This case study was developed with AI assistance. It uses attributed public records and computational checks, with no new laboratory or sensory measurements.
 
+This is a visual starting point for [From biological measurements to better experiments](https://github.com/TheThunda01/TheThunda01/blob/main/PROJECT_GUIDE.md). A familiar question about plant aroma leads into chemical identity, protein evidence, and the limits of a comparison, before the portfolio turns to fitting models and choosing measurements.
+
 ## What it does
 
 | Selected enzyme | Evidence used here | Boundary |

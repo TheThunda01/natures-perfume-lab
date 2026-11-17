@@ -76,7 +76,7 @@ To open the static explorer:
 python -m http.server 8000 --bind 127.0.0.1 --directory web
 ```
 
-Open <http://127.0.0.1:8000/>. The explorer displays this project's prepared evidence; it does not run a database search or accept arbitrary molecules and proteins.
+Open <http://127.0.0.1:8000/>, select carbon 3, and switch from GPP to limonene. The highlight follows the same label into the ring. Switch to linalool to find it on the open chain. The 3D view shows one computed geometry for each molecule.
 
 ## Example results
 

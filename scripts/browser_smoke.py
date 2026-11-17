@@ -68,6 +68,11 @@ def check(url: str, screenshots: Path | None, executable: str | None) -> dict:
                 page.screenshot(path=str(screenshots / "explorer-2d.png"))
             page.locator("#view-3d").click()
             page.wait_for_timeout(100)
+            key = page.get_by_role("list", name="Elements in the model")
+            assert key.is_visible()
+            for molecule, expected in [("gpp", ["C", "O", "P"]), ("linalool", ["C", "O"]), ("limonene", ["C"])]:
+                page.locator(f'.molecule-choice[data-id="{molecule}"]').click()
+                assert key.locator("li:visible").evaluate_all("(items) => items.map(item => item.dataset.element)") == expected
             canvas = page.locator("#molecule-canvas")
             before = canvas.evaluate("(c) => c.toDataURL()")
             page.locator("#rotation-y").focus()
@@ -132,7 +137,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", help="Use an already running copy of the explorer")
     parser.add_argument("--screenshots", type=Path, help="Optional output directory for screenshots")
-    parser.add_argument("--chromium", help="Chromium executable; otherwise use a system or Playwright installation")
+    browser = parser.add_mutually_exclusive_group()
+    browser.add_argument("--use-playwright-chromium", action="store_true", help="Use the Chromium installed by Playwright")
+    browser.add_argument("--chromium", help="Chromium executable; otherwise use a system or Playwright installation")
     args = parser.parse_args()
     if args.screenshots:
         args.screenshots.mkdir(parents=True, exist_ok=True)
@@ -144,7 +151,7 @@ def main():
             server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
             threading.Thread(target=server.serve_forever, daemon=True).start()
             url = f"http://127.0.0.1:{server.server_port}/"
-        executable = args.chromium or shutil.which("chromium") or shutil.which("google-chrome")
+        executable = None if args.use_playwright_chromium else (args.chromium or shutil.which("chromium") or shutil.which("google-chrome"))
         print(json.dumps(check(url, args.screenshots, executable), indent=2))
     finally:
         if server:

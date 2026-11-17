@@ -143,6 +143,10 @@
       .map((f) => `<span class="fact">${esc(f)}</span>`)
       .join("");
     $("representation-note").textContent = m.representation || "";
+    const elements = new Set(atomsOf(m).map(symbol));
+    for (const item of document.querySelectorAll(".element-key [data-element]")) {
+      item.hidden = !elements.has(item.dataset.element);
+    }
     $("atom-buttons").innerHTML = carbons
       .map(
         (a) =>

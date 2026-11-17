@@ -1,10 +1,10 @@
 # Nature's perfume lab
 
-**Orange peel and lavender contain familiar aroma compounds. How do plants build them from the same starting molecule?** Follow geranyl diphosphate (GPP) toward limonene and linalool, two products made by the selected citrus and lavender enzymes. The explorer lets you follow carbon atoms, rotate molecular illustrations, and compare the enzymes behind these routes.
+**How do citrus and lavender enzymes make different products from the same starting molecule?** Geranyl diphosphate (GPP) supplies ten carbons to both routes. Use the explorer to follow one carbon into the ring of limonene and the open chain of linalool, then compare the evidence for each enzyme.
 
 ## Why this project
 
-Start with one carbon atom. Follow its label from GPP into a ring-shaped limonene molecule or an open-chain linalool molecule. Then look at the two enzyme sequences: where do they match, and what can a match actually tell us? An experimental citrus structure adds another view of the evidence.
+The published enzyme assays tell us which products were observed. A comparison of the two protein sequences gives a different kind of evidence. The experimental citrus structure shows which parts of one enzyme were resolved.
 
 The aim is to make the connection between chemistry and proteins easier to explore, with the sources and calculations close at hand. No coding is needed to use the prepared explorer; the Python workflow lets you reproduce its results. Start with the [project context](docs/project-context.md) or the [biology guide](docs/biology-and-concepts.md).
 
@@ -76,11 +76,11 @@ To open the static explorer:
 python -m http.server 8000 --bind 127.0.0.1 --directory web
 ```
 
-Open <http://127.0.0.1:8000/>. The explorer displays this project's prepared evidence; it does not run a database search or accept arbitrary molecules and proteins.
+Open <http://127.0.0.1:8000/>, select carbon 3, and switch from GPP to limonene. The highlight follows the same label into the ring. Switch to linalool to find it on the open chain. The 3D view shows one computed geometry for each molecule.
 
 ## Example results
 
-The carbon checks distinguish two outcomes without losing the shared ten-carbon framework: limonene forms a ring, while linalool remains an open-chain alcohol. Both declared neutral-species equations balance elements and formal charge.
+All three structures contain **ten carbons**. Limonene has **one ring**, while GPP and linalool have **zero**. Compare the carbon and ring counts in the three-row table, then follow the two product branches in Figure 1. [Chemical summary](results/chemical_summary.csv)
 
 ![GPP branches toward the selected citrus limonene and lavender linalool products](results/figures/reaction_paths.svg)
 

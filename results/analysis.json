@@ -1852,7 +1852,7 @@
   },
   "software_versions": {
     "python": "3.12.14",
-    "biopython": "1.86",
+    "biopython": "1.87",
     "numpy": "2.3.4",
     "rdkit": "2025.9.1",
     "matplotlib": "3.10.8",

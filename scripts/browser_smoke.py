@@ -68,7 +68,11 @@ def check(url: str, screenshots: Path | None, executable: str | None) -> dict:
                 page.screenshot(path=str(screenshots / "explorer-2d.png"))
             page.locator("#view-3d").click()
             page.wait_for_timeout(100)
-            assert page.get_by_role("list", name="Elements in the model").is_visible()
+            key = page.get_by_role("list", name="Elements in the model")
+            assert key.is_visible()
+            for molecule, expected in [("gpp", ["C", "O", "P"]), ("linalool", ["C", "O"]), ("limonene", ["C"])]:
+                page.locator(f'.molecule-choice[data-id="{molecule}"]').click()
+                assert key.locator("li:visible").evaluate_all("(items) => items.map(item => item.dataset.element)") == expected
             canvas = page.locator("#molecule-canvas")
             before = canvas.evaluate("(c) => c.toDataURL()")
             page.locator("#rotation-y").focus()
